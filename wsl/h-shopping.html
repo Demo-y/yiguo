@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="h-css/h-shopping.css">
+    <link rel="stylesheet" href="../fm/index.css">
+    <link rel="stylesheet" href="../lxd/css/e-common.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 顶部工具 -->
+    <div class="a-siteNav">
+        <div id="a-siteNav">
+            <ul class="a-siteNavLeft">
+                <li>欢迎光临易果生鲜！</li>
+                <li>
+                    <img class="a-warn" src="http://img05.yiguoimg.com/d/web/190408/00592/145951/notice.png" alt="">
+                    <a href="http://www.yiguo.com/help/policenotice.html" target="_blank">网警提示</a>
+                </li>
+            </ul>
+            <ul class="a-siteNavRight">
+
+                <li class="h-phone"><a href="../hxy/myfruit.html"></a></li>
+                <li><a href="../fm/index.html">[退出]</a></li>
+                <li class="a-myyiguo">
+                    <a href="../hxy/myfruit.html">
+                        <i class="a-icont1"></i> 我的易果
+                        <s class="a-arrows"></s>
+                    </a>      
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的优惠券</a></li>
+                        <li><a href="">我的收藏 </a></li>
+                        <li><a href="">我的悠币 </a></li>
+                        <li><a href="">我的退换货</a></li>
+                        <li><a href="">预存款查询</a></li>
+                        <li><a href="">立即充值</a></li>
+                    </ul>
+                </li>
+                <li class="a-mobileyiguo">
+                    <a href="">
+                        <i class="a-icont3"></i>手机易果 
+                        <s class="a-arrows"></s>
+                    </a>
+                    <ul>
+                        <li><img src="http://static01.yiguo.com/www/images/header/qrcode_app.jpg" alt="">
+                            <span> 扫一扫下载APP</span>
+                        </li>
+                        <li><img src="http://static01.yiguo.com/www/images/header/qrcode_wechat.jpg" alt="">
+                            <span> 易果生鲜微信</span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="a-icont5"></i>礼品卡绑定</a></li>
+                <li><a href=""><i class="a-icont6"></i>礼品兑换券入口</a></li>
+                <li><a href="../myy/BusinessQualification.html"><i class="a-icont7"></i> 营业资质</a></li>
+                <li><a href=""><i class="a-icont8"></i>人才招聘</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="h-cart">
+        <div class="h-header">
+            <div class="h-wrap">
+                <div class="h-logo">
+                    <a href="../fm/index.html" target="_blank"></a>
+                </div>
+                <div class="h-steps">
+                    <ul>
+                        <li class="h-on">
+                            <b class="h-b1"></b>
+                            <span>我的购物</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <b class="h-b2"></b>
+                            <span>填写订单信息</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <b class="h-b3"></b>
+                            <span>成功提交订单</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="h-in-cart">
+            <!-- 购物车 -->
+            <div class="h-cart-none" style="display: none">
+                <p>
+                    <span>购物车是空的，去买点东西吧！
+                        <a href="../fm/index.html">继续逛逛>></a>
+                    </span>
+                </p>
+            </div>
+            <div class="h-wrap">
+                <h2>
+                    <div class="h-clearfix">
+                        <div class="h-send">
+                            <i></i>配送至:
+                        </div>
+                        <div class="h-tit">
+                            <a href="javascript:void(0)">上海</a>
+                        </div>
+                    </div>
+                    <a class="h-onshopping" href="http://www.yiguo.com">继续购物>></a>
+                </h2>
+                <div class="h-cart-alert">
+                    <table class="h-cart-table">
+                        <tr>
+                            <th class="h-check">
+                                <label>
+                                    <input type="checkbox" class="h-checkall" checked>
+                                    全选
+                                </label>
+                            </th>
+                            <th class="h-info">商品信息</th>
+                            <th class="h-ub">悠币</th>
+                            <th class="h-price">单价</th>
+                            <th class="h-num">数量</th>
+                            <th class="h-total">合计</th>
+                            <th class="h-spec">规格</th>
+                            <th class="h-opera">操作</th>
+                        </tr>
+                    </table>
+                    <div>
+                        <table class="h-cart-table">
+                            <tr>
+                                <td class="h-cart-check">
+                                    <input type="checkbox" class="h-checksin" checked>
+                                </td>
+                                <td class="h-img">
+                                    <img src="http://img11.yiguoimg.com/d/items/2019/190704/9288738437015268_300.jpg" alt="">
+                                </td>
+                                <td class="h-info">
+                                    Mr APPLE新西兰红玫瑰Queen苹果15个礼盒装150g以上/个
+                                </td>
+                                <td class="h-ub"></td>
+                                <td class="h-price">￥ <span>128.00</span> </td>
+                                <td class="h-num">
+                                    <div class="h-quantity">
+                                        <button type="button" class="h-subtract">-</button>
+                                        <input type="text" value="1">
+                                        <button type="button" class="h-add">+</button>
+                                    </div>
+                                    
+                                </td>
+                                <td class="h-total">
+                                    ￥
+                                    <span class="h-heji">128.00</span>
+                                </td>
+                                <td class="h-spec">15个/箱</td>
+                                <td class="h-opera">
+                                    <a href="javascript:void(0)" class="h-collect">移入收藏</a>
+                                    </br>
+                                    <a href="javascript:void(0)" class="h-delete">删除</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="h-cartfoot">
+                        <div class="h-wrap">
+                            <div class="h-left">
+                                <label>
+                                    <input type="checkbox" class="h-checkall" checked>
+                                    全选
+                                </label>
+                                <span class="h-d">
+                                    <i></i>
+                                    删除选中的商品
+                                </span>
+                                <span class="h-e">清空购物车</span>
+                            </div>
+                            <div class="h-right">
+                                <span class="ub">悠币：<i>0</i> 个</span>
+                                <span class="zj">总价：
+                                    <i>￥
+                                        <span class="h-zj"></span>
+                                    </i>
+                                </span>
+                                <a href="h-order.html" class="h-btn">去结算</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-hint">
+                    <div class="h-hint-header">
+                        <h3>提示</h3>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="h-hint-n">
+                        <i></i>
+                        <p>确定删除此商品？</p>
+                        <button type="button" class="h-del">删除</button>
+                        <button type="button" class="h-cancle">取消</button>
+                    </div>
+                </div>
+                <div class="h-hint1">
+                    <div class="h-hint1-header">
+                        <h3>提示</h3>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="h-hint1-n">
+                        <i></i>
+                        <p>确定删除选中的商品吗？</p>
+                        <button type="button" class="h-del">删除</button>
+                        <button type="button" class="h-cancle">取消</button>
+                    </div>
+                </div>
+                <div class="h-hint2">
+                    <div class="h-hint2-header">
+                        <h3>提示</h3>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="h-hint2-n">
+                        <i></i>
+                        <p>收藏成功！</p>
+                        <button type="button" class="h-sure">确定</button>
+                    </div>
+                </div>
+                <div class="h-hint3">
+                    <div class="h-hint3-header">
+                        <h3>提示</h3>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="h-hint3-n">
+                        <i></i>
+                        <p>确定清空购物车？</p>
+                        <button type="button" class="h-sure2">确定</button>
+                        <button type="button" class="h-cancle">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="e-ad">
+        <div class="e-adList">
+            <dl>
+                <dt class="e-dl1">新手指南</dt>
+                <dd>
+                    <p>
+                        <a href="">账户注册</a>
+                    </p>
+                    <p>
+                        <a href="">购物流程</a>
+                    </p>
+                    <p>
+                        <a href="">订购方式</a>
+                    </p>
+                    <p>
+                        <a href="">悠币说明</a>
+                    </p>
+                    <p>
+                        <a href="">会员等级</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="e-dl2">付款方式</dt>
+                <dd>
+                    <p>
+                        <a href="">支付方式</a>/
+                        <a href="">发票说明</a>
+                    </p>
+                    <p>
+                        <a href="">礼品卡章程</a>
+                    </p>
+                    <p>
+                        <a href="">优惠代码</a>
+                    </p>
+                    <p>
+                        <a href="">卡券购买章程</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="e-dl3">配送方式</dt>
+                <dd>
+                    <p>
+                        <a href="">配送运费</a>
+                    </p>
+                    <p>
+                        <a href="">时间及范围</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="e-dl4">售后服务</dt>
+                <dd>
+                    <p>
+                        <a href="">退换货政策</a>
+                    </p>
+                    <p>
+                        <a href="">退换货流程</a>
+                    </p>
+                    <p>
+                        <a href="">常见问题</a>
+                    </p>
+                    <p>
+                        <a href="">极速退款</a>
+                    </p>
+                    <p>
+                        <a href="">投诉与建议</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="e-dl5">关于我们</dt>
+                <dd>
+                    <p>
+                        <a href="">公司介绍</a>
+                    </p>
+                    <p>
+                        <a href="">联系我们</a>
+                    </p>
+                    <p>
+                        <a href="">业务合作</a>
+                    </p>
+                    <p>
+                        <a href="">诚信举报</a>
+                    </p>
+                    <p>
+                        <a href="">用户协议</a>
+                    </p>
+                    <p>
+                        <a href="">隐私协议</a>
+                    </p>
+                    <p>
+                        <a href="">友情链接</a>
+                    </p>
+                </dd>
+            </dl>
+            <div class="e-service">
+                <span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+                <span>周一至周日 9:00-21:00</span>
+            </div>
+            <div class="e-cooperation">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p>
+                    <a href="">沪ICP备09008015号</a>Copyright ? 2005-2019 版权所有
+                </p>
+                <p>
+                    <a href="">
+                        <img src="http://img05.yiguoimg.com/d/web/190617/00191/142933/ordermeal.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="http://img06.yiguoimg.com/d/web/190527/00191/172725/report.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="http://img06.yiguoimg.com/d/web/190510/00192/161235/wxb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png"
+                            alt="">
+                    </a>
+                    <a href="">
+                        <img src="https://img05.yiguoimg.com/d/web/190618/00191/143543/962110.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="http://img06.yiguoimg.com/d/web/181227/00281/143951/footer_copy.jpg" width="36"
+                            height="47" alt="">
+                    </a>
+                    <a href="" style="display: inline-block; height: 30px;">
+                        <img src="http://www.beian.gov.cn/file/ghs.png" alt="" style="float: left">
+                        <span
+                            style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color:#939393;">沪公网安备
+                            31010502000002号</span>
+                    </a>
+                </p>
+                <p>违法和不良信息举报电话 400-000-7788</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../fm/index.js"></script> -->
+<script type="text/javascript">
+    $(function(){
+        var phone=window.sessionStorage.getItem("phone");  
+    $(".h-phone").html(phone)
+//全选
+        $(".h-checkall").on("click", function() {
+            // checked是DOM元素的一个属性，需要通过[0]访问
+            var hChecked = $(this)[0].checked;
+            $(".h-cart-check input").each(function() {
+                $(this)[0].checked = hChecked;
+            })
+            var hCheckedAll = $(this)[0].checked;
+            $(".h-checkall").each(function(){
+                $(this)[0].checked = hCheckedAll;
+            })
+        });
+//取消全选
+        $(".h-cart-check input").on("click", function() {
+        var i = 0;
+        $(".h-cart-check input").each(function() {
+            // 存在一个未选中，则，全选按钮未选中
+            if ($(this)[0].checked == false) {
+                $(".h-checkall")[0].checked = false;
+                $(".h-checkall")[1].checked = false;
+            } else {
+                // 如果是选中的，累加，和全部长度比较
+                i += 1;
+                if (i == $(".h-cart-check input").length) {
+                    $(".h-checkall")[0].checked = true;
+                    $(".h-checkall")[1].checked = true;
+                }
+            }
+        })
+    });
+
+//删除选中的商品
+        $(".h-d").click(function(){
+            $(".h-hint1").show();
+            $(".h-hint1-header button, .h-cancle").click(function(){
+                $(".h-hint1").hide();
+            })
+            $(".h-del").click(function(){
+                $(".h-cart-table").each(function() {
+                    if($(this).find($(".h-cart-check input")).prop('checked')){
+                        $(this).remove();
+                    }
+                    if($(this).find($(".h-checkall")).prop('checked')){
+                        $(".h-wrap h2").remove();
+                        $(".h-cart-alert").remove();
+                        $(".h-cart-none").css("display","block");
+                    }
+                 $(".h-hint1").hide();
+                })
+            })
+        })
+//清空购物车
+        $(".h-e").click(function(){
+            $(".h-hint3").show();
+            $(".h-hint3-header button, .h-cancle").click(function(){
+                $(".h-hint3").hide();
+            })
+            $(".h-sure2").click(function(){
+                $(".h-cart-table").each(function() {
+                    $(this).parent().parent().remove();
+                    $(".h-cart-none").css("display","block");
+                    $(".h-hint3").hide();
+                })
+            })
+        })
+
+//单击数量+1
+        var allprice = 0;
+        //总价
+        $(".h-zj").html($(".h-heji").html())
+        $(".h-add").click(function(){
+            $(this).prev().val(parseInt($(this).prev().val()) + 1); //数量 
+            var hPrice = $(this).parent().parent().prev().children().text();
+            var hNum = $(this).prev().val();
+            var hTotal = $(this).parent().parent().next().children();
+            hTotal.text(parseFloat(hPrice * hNum).toFixed(2));
+            //总价
+            $(".h-zj").html(parseFloat(hPrice * hNum).toFixed(2));
+        })
+//单击数量-1
+        $(".h-subtract").click(function(){
+            $(this).next().val(parseInt($(this).next().val()) - 1);
+            if (parseInt($(this).next().val()) < 1) {
+                $(this).next().val(1);
+                $(".h-hint").show();
+                $(".h-hint-header button, .h-cancle").click(function(){
+                    $(".h-hint").hide();
+                })
+                $(".h-del").click(function(){
+                $(".h-cart-table").each(function() {
+                    $(this).parent().parent().remove();
+                    $(".h-cart-none").css("display","block");
+                    $(".h-hint3").hide();
+                })
+            })
+            }
+            var hTotal1 = $(this).parent().parent().next().children(); 
+            var hPrice1 =$(this).parent().parent().prev().children().text();
+            var hNum1 =$(this).next().val();
+            hTotal1.text(parseFloat(hPrice1 * hNum1).toFixed(2));
+            //总价
+            $(".h-zj").html(parseFloat(hPrice1 * hNum1).toFixed(2));
+        })
+//移入收藏
+        $(".h-collect").click(function(){
+            $(".h-hint2").show();
+            $(".h-hint2-header button, .h-sure").click(function(){
+                $(".h-hint2").hide();
+            })
+        })
+//删除
+        $(".h-delete").click(function(){
+            var parameter =$(this);
+            $(".h-hint").show();
+            $(".h-hint-header button, .h-cancle").click(function(){
+                $(".h-hint").hide();
+            })
+            $(".h-del").click(function(){
+                parameter.parent().parent().remove();
+                $(".h-hint").hide();
+                
+            })
+            $(".h-del").click(function(){
+                $(".h-cart-table").each(function() {
+                    $(this).parent().parent().remove();
+                    $(".h-cart-none").css("display","block");
+                    $(".h-hint3").hide();
+                })
+            })
+        })
+//跳转
+        $(".h-right a").click(function(){
+        for(var i=1;i<$("table").length;i++){
+            localStorage.setItem("a",$(".h-info").eq(i).html())
+            localStorage.setItem("b",$(".h-price span").eq(i-1).html())
+            localStorage.setItem("c",$(".h-quantity input").val())
+            localStorage.setItem("d",$(".h-total span").eq(i-1).html())
+            localStorage.setItem("e",$(".h-spec").eq(i).html())
+        }
+        localStorage.setItem("f",$(".h-zj").html())
+        })
+    })
+</script>
+</body>
+</html>

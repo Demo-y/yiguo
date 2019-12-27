@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+    color: #4D4D4D;
+}
+.topbar {
+    width: 100%;
+    height: 26px;
+    background: url(https://i.alipayobjects.com/e/201305/OzLou0mHd.png) repeat-x 0 0;
+}
+.topbar .topbar-wrap {
+    background: url(https://i.alipayobjects.com/e/201305/OzLou0mHd.png) repeat-x 0 0;
+    width: 950px;
+    margin: 0 auto;
+}
+.topbar-link-last {
+    padding-right: 0;
+}
+.topbar-link-last {
+    text-decoration: none;
+    float: right;
+    color: #fff;
+    padding: 4px 15px;
+    background: url(https://i.alipayobjects.com/e/201305/OzUPukVET.png) no-repeat 0 7px;
+}
+.topbar-link-first {
+    padding-left: 0;
+    background: 0 0;
+    float: right;
+    color: #fff;
+    padding: 4px 15px;
+}
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 0px;
+}
+.header-container {
+    width: 950px;
+    margin: 0 auto;
+}
+#header .header-title {
+    width: 250px;
+    height: 60px;
+    float: left;
+}
+.alipay-logo {
+    display: block;
+    width: 114px;
+    position: relative;
+    left: 0;
+    top: 10px;
+    float: left;
+    height: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(https://t.alipayobjects.com/images/T1HHFgXXVeXXXXXXXX.png);
+}
+#header .logo-title {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei",微软雅黑,"宋体";
+    border-left: 1px solid #676d70;
+    color: #676d70;
+    height: 20px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#content {
+    background: #eff0f1;
+    color: #000;
+}
+.long-content {
+    font-weight: 700;
+    font-size: 14px;
+}
+.second {
+    padding-left: 15px;
+}
+.content1 {
+    padding: 16px 23px;
+    position: relative;
+    width: 905px;
+    margin: 0 auto; 
+    border-bottom: 3px solid #b3b3b3;
+}
+#order {
+    position: relative;
+}
+#order span {
+    line-height: 30px;
+    color: #000;
+}
+.h-QR {
+    width: 950px;
+    height: 480px;
+    margin: 0 auto; 
+    border-bottom: 3px solid #b3b3b3;
+}
+.QR {
+    width: 800px;
+    height: 480px;
+    float: left;
+    background: #fff;
+    position: relative;
+}
+.QR .h-sao {
+    margin-top: 50px;
+    text-align: center;
+}
+.QR .h-money {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #f60;
+}
+.qr-img img{
+    position: absolute;
+    display: block;
+    width: 190px;
+    height: 240px;
+    top: 115px;
+    left: 300px;
+}
+.qr-img a {
+    position: absolute;
+    color: #a6a6a6;
+    top: 360px;
+    left: 327px;
+}
+.h-zhifu {
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+.QR-right {
+    position: relative;
+    width: 150px;
+    float: left;
+    background: #e6e6e6;
+}
+.QR-right img {
+    width: 150px;
+    height: 475px;
+}
+.h-alipay-foot {
+    width: 100%;
+    background: #eff0f1;
+}
+.h-alipay-foot a {
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #808080;
+}
+.h-alipay-foot img {
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+}
+.h-details {
+    display: none;
+}
+.h-details span{
+    display: block;
+    width: 708px;
+    line-height: 20px;
+}
+.h-r-det {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 1;
+}
+.h-paymoney {
+    width: 80px;
+    font-size: 20px;
+    color: #ff6700;
+    font-weight: 700;
+}
+.h-paymoney i {
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+}
+.h-det {
+    position: absolute;
+    top: -23px;
+    right: 40px;
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    width: 65px;
+    line-height: 20px;
+    background: #b3b3b3;
+    text-align: center;
+}

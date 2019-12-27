@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Arial,Verdana,"宋体";
+}
+.h-cart {
+    width: 100%;
+    background: #f7f8f9;
+}
+.h-header {
+    width: 100%;
+    height: 78px;
+    background: #e0e0e0;
+}
+.h-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.h-header .h-wrap {
+    height: 78px;
+    padding: 15px 0 5px;
+}
+.h-logo {
+    float: left;
+}
+.h-logo a {
+    display: block;
+    width: 145px;
+    height: 50px;
+    background: url(http://static01.yiguo.com/cart/images/header/logo.png) no-repeat center;
+}
+.h-steps {
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+.h-steps ul {
+    list-style: none;
+}
+.h-steps li {
+    position: relative;
+    float: left;
+}
+.h-steps li b {
+    background: url(http://static01.yiguo.com/cart/images/order-step.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+.h-steps li .h-b1 {
+    background-position: 0 -44px;
+}
+.h-steps li .h-b2 {
+    background-position: -42px 0;
+}
+.h-steps li .h-b3 {
+    background-position: -84px 0;
+}
+.h-steps li span {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333;
+}
+.h-steps .h-on span {
+    color: #008842;
+}
+.h-steps li i {
+    width: 165px;
+    height: 6px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.h-in-cart{
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.h-cart-none {
+    width: 1200px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+    line-height: 30px;
+    padding: 70px 0;
+    margin: 0 191.5px;
+}
+.h-cart-none p {
+    height: 280px;
+    font-size: 14px;
+    font-family: "宋体";
+    text-align: center;
+    background: url(http://static01.yiguo.com/cart/images/none-bg.jpg) no-repeat center bottom;
+}
+.h-cart-none p span {
+    font-size: 14px;
+    font-weight: normal;
+}
+.h-cart-none span a {
+    margin-left: 15px;
+    color: #008842;
+    text-decoration: none;
+}
+.h-cart-none p a {
+    color: #008842;
+    text-decoration: none;
+}
+.h-wrap h2 {
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-bottom: 2px solid #05984d;
+    position: relative;
+    background: url(http://static01.yiguo.com/cart/images/bg_cart.png) no-repeat;
+}
+.h-clearfix {
+    position: absolute;
+    left: 230px;
+    top: 4px;
+    text-indent: 0;
+    font-size:12px;
+    color: #444444;
+    font-family: "宋体";
+}
+.h-send {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0;
+    cursor: pointer;
+    text-align: center;
+}
+/* .h-send i {
+    display: inline-block;
+    background: url(http://static01.yiguo.com/cart/images/bg_cart.png) no-repeat;
+    background-position: -80px -40px;
+    width: 12px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: center
+} */
+.h-tit {
+    float: left;
+}
+.h-tit a:hover {
+    color: #fff;
+    background-color: #008842;
+}
+.h-tit a {
+    z-index: 100;
+    position: relative;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0 5px 5px 5px;
+    cursor: pointer;
+    text-decoration: none;
+     color: #444;
+}
+.h-onshopping {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #008842;
+    text-indent: 0;
+    text-decoration: underline;
+    margin-right: 22px;
+    font-size: 12px;
+}
+.h-cart-alert {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.h-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+ th.h-check {
+    width: 120px;
+    padding:0 10px 0 20px;
+}
+.h-cart-table th.h-check {
+    text-align: left;
+    padding-left: 20px;
+}
+.h-cart-table th {
+    height: 40px;
+    background-color: #f1f1f1;
+    font: 12px/40px Simsun;
+    color: #262626;
+    text-align: center;
+    padding: 0 10px;
+}
+.h-checkall, .h-checkall1 {
+    margin-right: 20px;
+    vertical-align: middle; 
+}
+.h-info {
+    width: 251px;
+}
+.h-ub {
+    width: 75px;
+}
+.h-price {
+    width: 100px;
+}
+.h-num, .h-total, .h-spec, .h-opera{
+    width: 110px;
+}
+.h-cart-table td {
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+}
+.h-cart-check {
+    width: 20px;
+}
+.h-img {
+    width: 80px;
+    position: relative;
+}
+.h-img img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+td.h-info {
+    text-align: left;
+}
+.h-price {
+    width: 100px;
+    color: #262626;
+    font-size: 14px;
+    line-height: 1em;
+}
+.h-num {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun;
+}
+.h-quantity {
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    height: 30px;
+}
+.h-subtract {
+    margin: 0;
+    width: 18px;
+    height: 24px;
+    float: left;
+    color: #444;
+    background: none;
+    border: 1px solid #999;
+}
+.h-add {
+    margin: 0;
+    width: 18px;
+    height: 24px;
+    float: right;
+    color: #444;
+    background: none;
+    border: 1px solid #999;
+}
+.h-quantity input {
+    position: absolute;
+    left: 22px;
+    top: 0;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+}
+.h-total {
+    width: 110px;
+    color: #e93005;
+    font-size: 14px;
+}
+.h-spec {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun;
+}
+.h-opera {
+    width: 110px;
+    color: #262626;
+    font: 12px/2em Simsun;
+}
+.h-collect:hover {
+    color: #008842;
+}
+.h-delete:hover {
+    color: #008842;
+}
+.h-opera a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+.h-cartfoot {
+    height: 60px;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    line-height: 60px;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+}
+.h-left {
+    float: left;
+}
+.h-left label {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.h-left input {
+    margin-right: 5px;
+    outline: none;
+}
+.h-left span {
+    color: #444;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.h-left span:hover {
+    color: #008842;
+}
+.h-left span i{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url(http://static01.yiguo.com/cart/images/bg_cart.png) no-repeat;
+    background-position: -100px -40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.h-right {
+    float: right;
+    width: 410px;
+}
+.h-right span {
+    margin-right: 20px;
+}
+.ub i {
+    color: #249c61;
+    font: bold 14px/1em Simsun;
+}
+.zj {
+    font-size: 14px;
+}
+.zj i {
+    color: #ff5317;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1em;
+}
+.h-btn {
+    font: bold 18px/1em "微软雅黑";
+    background-color: #ff5317;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 0;
+    text-decoration: none;
+}
+.h-hint, .h-hint1, .h-hint2 , .h-hint3 {
+    position: fixed;
+    z-index: 999;
+    width: 500px;
+    height: 210px;
+    top: 250px;
+    right: 550px;
+    display: none;
+}
+.h-hint-header, .h-hint1-header, .h-hint2-header, .h-hint3-header {
+    height: 34px;
+    background: #008842;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+.h-hint-header button, .h-hint1-header button, .h-hint2-header button, .h-hint3-header button {
+    background: #008842;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: blue;
+    cursor: pointer;
+}
+.h-hint-n, .h-hint1-n, .h-hint2-n, .h-hint3-n {
+    height: 124px;
+    border: 1px solid #008842;
+    padding: 25px 15px;
+    background: #fff;
+}
+.h-hint-n i, .h-hint1-n i, .h-hint2-n i, .h-hint3-n i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(http://static01.yiguo.com/common/popup/popup_img/icon32x32.png) no-repeat;
+    background-position:-80px 0;
+    position: absolute;
+    top: 50px;
+    left: 235px;
+}
+.h-hint2-n i {
+    background: url(http://static01.yiguo.com/common/popup/popup_img/icon32x32.png) no-repeat;
+    background-position :0 0;
+}
+.h-hint-n p, .h-hint1-n p, .h-hint2-n p, .h-hint3-n p {
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-top:35px; 
+    font-size: 14px;
+    color: #444;
+}
+.h-hint-n button, .h-hint1-n button, .h-hint2-n button, .h-hint3-n button {
+    width: 76px;
+    height: 30px;
+    border: 1px solid #6ab930;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.h-hint-n .h-del, .h-hint1-n .h-del, .h-hint2-n .h-sure, .h-hint3-n .h-sure2 {
+    color: #fff;
+    background: #008842;
+    margin-left: 145px;
+}
+.h-cancle {
+    color: #008842;
+    background: #fff;
+    margin-left: 20px;
+}
+.h-hint2-n .h-sure {
+    margin-left:193px;
+}

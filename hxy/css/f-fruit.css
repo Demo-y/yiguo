@@ -1,0 +1,1471 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f7f8f8;
+}
+.f-detail{
+    width:100%;
+    background: #f7f8f8;
+    font-size: 12px; 
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    color: #444;
+}
+.f-detail a{
+    color:#444;
+    text-decoration:none;
+    outline:none;
+} 
+.f-detail ul{
+    list-style: none;
+}
+.f-top{
+    height: 30px;
+}
+.f-search{
+    height: 78px;
+}
+.f-list{
+   width:1200px;
+   height:38px;
+   margin: 0 auto;
+}
+.f-listLeft{
+   float:left;
+   position: relative;
+}
+.f-listLeft1{
+   width: 180px;
+   height: 38px;
+   text-align: center;
+   background:#008842;
+}
+.f-listLeft1>span{
+    color: #fff;
+    padding:11px 0;
+    font:bold 15px/16px  "Microsoft YaHei";
+    height: 16px;
+    display:block;
+}
+.f-listLeft1:hover .f-listLeft2 ul{
+    display: block;
+}
+.f-listLeft2 { 
+    background: rgba(255,255,255,0.9);
+}
+.f-listLeft2 ul{
+    display: none;
+    height:462px;
+    position: absolute;
+    background-color:#fff;
+    opacity: .9;
+    z-index:10;
+}
+.f-listLeft1:hover .f-listH{
+    display:block;
+}
+.f-listHide1 .f-one{
+    display:block;
+    width:134px;
+    height:24px;
+    border:  solid #fff; 
+    padding:9px 45px 9px 0px;
+    font:normal 14px/24px "Microsoft YaHei";
+    position:relative;
+    z-index:10;
+    border-width: 1px 0px 1px 1px;
+    transition: ease 0.2s;
+    cursor: pointer;
+
+}
+.f-listHide1>a:hover{
+    display:inline-block;
+    width:135px;
+    background: #fff; 
+    color:#008842; 
+    padding:9px 35px 9px 10px;
+    border:  solid #bbb; 
+    border-width: 1px 0px 1px 1px;
+ }
+.f-listHide1:hover span{
+    display:block;
+}
+.f-listHide1:hover .f-listName{
+    display:block;
+}
+.f-listLeft2 .f-one i{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-right:15px;
+    vertical-align:middle;
+}
+.f-one1 i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat 0 0;
+}
+.f-two i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -24px 0;
+}
+.f-three i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -48px 0;
+}
+.f-four i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -72px 0;
+}
+.f-five i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat 0 0;
+}
+.f-six i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -96px 0;
+}
+.f-seven i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -120px 0;
+}
+.f-eight i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -144px 0;
+}
+.f-nine i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -168px 0;
+}
+.f-ten i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -192px 0;
+}
+.f-eleven i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -216px 0;
+}
+.f-twelve i{
+    background:url('http://static01.yiguo.com/www/images/header/nav-icon.png') no-repeat -240px 0;
+}
+.f-listName{
+    width:215px;
+    height:466px;
+    padding:17px 20px;
+    position:absolute;
+    top:-38px;
+    left:180px;
+    background:rgba(255,255,255,0.9);
+    z-index:8;
+    border: 1px solid #bbb;
+    display:none;
+}
+.f-fruitTitle{
+    margin-bottom:10px;
+}
+.f-fruitTitle a{
+    text-decoration: underline;
+    font-size:18px;
+    color: #008842;
+    margin-left:-140px;
+}
+.f-listHide1 span{
+    display:none;
+    position:absolute;
+    top:7px;
+    right:18px;
+    text-decoration: none;
+}
+.f-fruitName{
+    height:220px;
+}
+.f-fruitName a{
+    margin-right:30px;
+    color:#686868;
+    line-height: 25px;
+    float:left;
+}
+.f-fruitName a:hover{
+    color: #008842;
+}
+.f-listImg{
+    position:absolute;
+    margin-bottom:10px;
+}
+.f-listImg a{
+    display:block;
+}
+.f-listRight{
+    width:1020px;
+    height:37px;
+    line-height:37px;
+    border-bottom:1px solid #008842;
+    float:left;
+}
+.f-listRight ul li{
+    float:left;
+    width:115px;
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    list-style:none;
+}
+.f-listRight ul li a:hover{
+    color:#008842;
+}
+/* 水果详情页 */
+.f-content{
+    width:1200px;
+    height: 625px;
+    margin:0 auto 20px auto;
+}
+.f-contentTitle{
+    margin:10px 0 10px -10px;
+}
+.f-contentTitle a{
+    margin:0 10px;
+}
+.f-contentTitle a:hover{
+    color: #008842;
+}
+.f-contentMain{
+    width:1200px;
+    height:600px;
+    position:relative;
+    float: left;
+}
+.f-contentImg{
+    height: 500px;
+    width:500px;
+    margin-bottom:10px;
+}
+.f-contentImg img{
+    height: 500px;
+    width:500px;
+    display:none;
+}
+.f-conImg{
+    width:500px;
+    height:87px;
+}
+.f-conImg img{
+    height: 85px;
+    width: 85px;
+    margin-right:16px;
+    border: 1px solid #bcbcbc;
+}
+.f-conImg img:hover{
+    border: 1px solid #008842;
+}
+.f-contentImg .picture{
+    display:block;
+}
+.f-contentCon{
+    width:680px;
+    margin-left:520px;
+    margin-top: -600px;
+}
+.f-contentCon>h1{
+    font:normal 26px ;
+}
+.f-contentCon>p{
+    height: 40px;
+    color: #777;
+    font:normal 16px/20px "Microsoft YaHei";
+    margin: 5px 85px 20px 0;
+}
+.f-conPrice{
+    width:640px;
+    height: 70px;
+    background: #fff;
+    padding: 10px 20px;
+}
+.f-conLeft{
+    width:423px;
+    height: 70px;
+    float:left;
+    position: relative;
+}
+.f-conLeft>span{
+    width:60px;
+    display: inline-block;
+}
+.f-conLeft>h3{
+    display: inline-block;
+    color: #ff0000;
+    font-size: 22px;
+    font-weight: normal;
+}
+.f-conLeft>h3 span{
+    padding: 0 5px;
+    font-size: 18px;
+    color: #ff0000;
+    font-style:normal;
+}
+.f-conLeft h5{
+    color: #999999;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.f-conLeft h5>p{
+    display: inline-block;
+    margin-left: 80px;
+}
+.f-conLeft p>i{
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url('http://static01.yiguo.com/www/images/icon-tel.png') no-repeat center;
+    vertical-align: middle;
+}
+.f-conLeft p>span{
+    color: black;
+}
+.f-conLeft p>strong{
+    font-family: normal;
+    color: #008842;
+    margin-left: 10px;
+}
+.f-photo{
+    width: 73px;
+    height: 73px;
+    padding: 3px 4px 4px 10px;
+    background: url('http://static01.yiguo.com/www/images/bg-code.png') no-repeat;
+    position: absolute;
+    left: 415px;
+    top: -5px;
+}
+.f-conLeft img{
+    width: 73px;
+    height: 73px;
+}
+.f-conRight{
+    float: right;
+    height:66px;
+    width: 74px; 
+    background: #fff;
+    text-align: center;
+}
+.f-conRight span{
+    display: inline-block;
+    line-height: 22px;
+    color: #999;
+}
+.f-conRight strong{
+    color: #e8380d;
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.f-conRight b{
+    color: #999;
+    line-height: 22px;
+    font-weight: normal;
+}
+.f-conRight b:hover{
+    color: #008842;
+}
+.f-conShop{
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 700px;
+    height: 390px;
+    overflow: hidden;
+}
+.f-conShopl{
+    width: 529px;
+    height: 182px;
+    padding-right: 20px;
+    border-right: 1px solid #d9d9d8;
+    float: left;
+}
+.f-conShopl h5,.f-conBtn h5{
+    width: 40px;
+    padding: 0 10px;
+    font-weight: 400;
+    float: left;
+}
+.f-conShopl h5{
+    line-height: 52px;
+}
+.f-conNum{
+    width:468px;
+    height: 62px;
+    float: left;
+    margin-bottom: 20px;
+}
+.f-conNum a:hover{
+    color: #008842;
+}
+.f-conNum a{
+    display: block;
+    background: #fff;
+    width: auto;
+    float: left;
+    text-align:center;
+}
+.f-conNum span{
+    display: block;
+    padding: 5px 12px 5px 9px;
+    border: 1px solid #008842;
+}
+.f-conNum .f-span{
+    border-top: none ;
+    position: relative
+}
+.f-span i{
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background: url('http://static01.yiguo.com/www/images/product.png') no-repeat 0 0;
+}
+.f-icon{
+    padding-left: 10px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.f-icon img{
+    vertical-align: middle;
+}
+.f-conBtn{
+    margin-bottom: 20px;
+}
+.f-conBtn h5{
+    line-height: 45px;
+}
+.f-conBtn1{
+    width: 76px;
+    position: relative;
+    float: left;
+}
+.f-conBtn input{
+    width: 39px;
+    height: 39px;
+    line-height: 41px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-right:none;
+    outline: none;
+}
+.f-conBtn1 button{
+    display: block;
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    outline: none;
+}
+.f-conBtn1 .f-add{
+    top: 0px;
+    right: 18px;
+    height: 22px;
+}
+.f-minu{
+    top: 21px;
+    right: 18px;
+    border-top: none;
+}
+.f-shop{
+    float: left;
+    width: 187px;
+    height: 43px;
+    margin-left: 10px;
+}
+.f-shop .f-shopping,.f-shop .f-shopping1{
+    display: block;
+    width: 187px;
+    height: 25px;
+    padding: 9px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font: normal 18px/25px "Microsoft YaHei";
+}
+.f-shop .f-shopping{
+    background: #008842;
+}
+.f-shopping:hover{
+    background: #09964e;
+}
+.f-shopping i,.f-shopping1 i{
+    display: inline-block;
+    width: 28px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    background: url('http://static01.yiguo.com/www/images/product.png') no-repeat -47px 0;
+}
+.f-shop .f-shopping1{
+    background: #757575;
+}
+.f-conShopr{
+    width: 120px;
+    float: right;
+    padding-left: 10px;
+    color: #777;
+}
+.f-conShopr p{
+    height: 20px;
+}
+.f-conShopr span{
+    display: inline-block;
+    height: 20px;
+    width: 60px;
+}
+.f-id{
+   position: relative;
+   margin-bottom:12px;
+}
+.f-conShopr .f-conId{
+    position: absolute;
+    left: 0;
+    top:6px;
+}
+.f-conShopr .f-conId1{
+    height: 25px;
+    padding-left: 63px;
+}
+.f-conShopr strong{
+    display: inline-block;
+    height: 25px;
+    width: 52px;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+.f-contentBottom{
+    margin:0 auto 20px auto;
+    width: 1200px;
+}
+.f-contentBottom:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.f-conBtol{
+    margin-bottom: 20px;
+    width: 253px;
+    margin-right: 15px;
+    float: left;
+    background:#fff;
+    
+    overflow: hidden;
+}
+.f-conBtor{
+    float: right;
+}
+ .f-conBtol h5{ 
+    height: 30px;
+    padding: 0 10px; 
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #008842;
+    color: #fff;
+}
+.f-browse{
+    margin-bottom: 20px;
+    /* border: 1px solid #cde4c0; */
+    display: none;
+}
+.f-browse h5>span{
+    margin-left: 152px;
+    font-weight: 400;
+}
+.f-guess{
+    border: 1px solid #cde4c0;
+}
+/*  */
+.f-Left3,.f-Left2{
+    padding: 0 10px 0 10px;
+    overflow: hidden;}
+/*  */
+.f-Left3 li,.f-Left2 li{
+    border-bottom: 1px dashed #cde4c0;
+    position: relative;
+}
+.f-Left3 li{
+    padding:0 0 12px 0; 
+}
+.f-Left2 li{
+    padding:0 0 27px 0; 
+}
+/*  */
+.f-Left2 .f-left2Img{
+    position: relative;
+}
+.f-Left2 .f-leftImg .f-dustbin{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 26px;
+    height: 22px;
+    background: url('http://static01.yiguo.com/www/images/product.png') no-repeat -82px -22px;
+    cursor: pointer;
+}
+.f-Left2 li:hover .f-dustbin{
+    display: block;
+    background-position: -82px 0;
+}
+/*  */
+.f-leftImg {
+    height: 68px;
+    width: 68px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+.f-leftImg img{
+    height: 68px;
+    width: 68px;
+}
+.f-leftImg .f-delete{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 26px;
+    height: 22px;
+    background: url("http://static01.yiguo.com/www/images/product.png") no-repeat -82px -22px;
+    cursor: pointer;
+}
+.f-leftImg .f-delete:hover{
+    background-position: -82px 0;
+}
+.f-leftDeltail{
+    width: 153px;
+    margin-left: 10px;
+    padding: 4px 0;
+    line-height: 20px;
+    float: left;
+}
+.f-leftDetail b{
+    display: block;
+    height: 40px;
+    margin-bottom: 12px;
+    color: #777;
+    font-weight: normal;
+    margin-top: 12px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.f-leftDetail b:hover{
+    color: #008842;
+}
+.f-priceShop span:first-child{
+    font-size: 12px;
+    color: #e8380d;
+}
+.f-shopcar{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+    padding: 3px 8px;
+    background: #008842;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.f-Left3 li:hover .f-shopcar{
+    display: block;
+}
+.f-conhot{
+    margin-bottom: 25px;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+}
+.f-hotT{
+    padding: 0 25px;
+    line-height: 35px;
+    color:#008842;
+    font-size: 14px;
+    font-weight: bold;
+}
+.f-conhot ul{
+    height: 233px;
+    width: 928px;
+}
+.f-conhot li{
+    float: left;
+    width: 135px;
+    padding: 10px 25px 25px 25px;
+    text-align: center;
+}
+.f-hotImg{
+    margin-bottom:10px;
+}
+.f-hotImg img{
+    height: 135px;
+    width: 135px;
+}
+.f-font{
+    height: 36px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+.f-font a{
+    color:#777;
+}
+.f-font a:hover{
+    color: #008842;
+}
+.f-pricer span{
+    color: #e8380d;
+    padding-right: 15px;
+    font-weight: 600
+}
+.f-pricer del{
+    color:#aaa;
+}
+.f-hotCon{
+    position: relative;
+}
+.f-hotList{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+}
+.f-hotFixed{
+    position: fixed;
+    top: 0px;
+    width: 928px;
+    z-index: 100;
+}
+.f-hotList>span{
+    display: block;
+    height: 36px;
+    width: 130px;
+    padding-top: 4px;
+    line-height: 36px;
+    font-size: 12px;
+    float: left;
+    margin-top: -1px;
+    text-align: center;
+    border-right: 1px solid #d4d4d4;
+}
+.f-hotList .f-green{
+    border-bottom: 2px solid #fff;
+    background: url('http://static01.yiguo.com/www/images/product.png') no-repeat -33px -58px #fff;
+}
+.f-hotList b{
+    font-weight: normal;
+    color: #e8380d;
+}
+.f-hotList>span:hover{
+    color: #008842;
+}
+.f-hotContent{
+    width: 928px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+}
+.f-hotContent1{
+    display:none;
+}
+.f-book{
+    padding: 24px 24px 0 24px;
+}
+.f-book table{
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    border: 1px solid #d3e2ca;
+    border-spacing: 0;
+}
+.f-book th{
+    width: 150px;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    background: #e7f5ee;
+    font-weight: normal;
+}
+.f-book td{
+    color: #666;
+    border: 1px solid #d3e2ca;
+    padding: 10px 20px;
+}
+.f-fruitpic{
+    padding-left:24px;
+    padding-bottom: 24px;
+}
+.f-fruitpic img{
+    display: block;
+}
+.f-fruitpic img:last-child{
+    width: 880px;
+}
+.f-people{
+    height: 90px;
+    padding: 20px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.f-peopleTotal{
+    float: left;
+    width: 200px;
+    text-align: center;
+    border-right: 1px dashed #d4d4d4;
+}
+.f-peopleTotal p{
+    font-size: 36px;
+    color: #008842;
+    padding: 10px 0;
+    text-align: center;
+ 
+}
+.f-peopleTotal span{
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: initial;
+    color: #666;
+}
+.f-peopleTotal strong{
+    color: #008842;
+}
+.f-peopleStatus{
+    width: 150px;
+    float: left;
+    padding: 12px 110px 2px 110px;
+    border-right: 1px dashed #d4d4d4;
+}
+.f-peopleStatus p{
+    float: left;
+    margin-left: 10px;
+    width: 140px;
+    height: 10px;
+    background: #e4e4e4;
+    margin-bottom: 15px;
+    position: relative;
+}
+.f-peopleStatus span{
+    display: block;
+    width: 35px;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    font-weight: normal;
+}
+.f-peopleStatus b{
+    height: 10px;
+    display: block;
+    background: #008842;
+    width: 0;
+}
+.f-peopleStatus .f-loading{
+    width: 31%;
+}
+.f-peopleStatus .f-loading1{
+    width: 69%;
+}
+.f-peopleStatus .f-loading2{
+    width: 0%;
+}
+.f-peopleStatus .f-loading5{
+    width: 78%;
+}
+.f-peopleStatus .f-loading6{
+    width: 22%;
+}
+.f-peopleStatus .f-loading7{
+    width: 100%;
+}
+.f-peopleStatus .f-loading8{
+    width: 57%;
+}
+.f-peopleStatus .f-loading9{
+    width: 43%;
+}
+.f-peopleStatus .f-loading10{
+    width: 33%;
+}
+.f-peopleStatus .f-loading11{
+    width: 67%;
+}
+.f-peopleStatus i{
+    display:inline-block;
+    width: 35px;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    font: normal 12px/10px Arial;
+}
+.f-peoplePro{
+    float: right;
+    width: 280px;
+    padding: 8px 0 8px 75px;
+}
+.f-peoplePro a{
+    width: 100px;
+    height: 26px;
+    margin: 10px 0;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #008842;
+}
+.f-peoplePro p{
+    color: #777;
+    font-size: 12px;
+}
+.f-comment{
+    padding: 20px;
+}
+.f-commentList{
+    position: relative;
+    height: 32px;
+    border-bottom: 1px solid #ebebeb;
+}
+.f-listBox{
+    float: left;
+    border-bottom: 0;
+}
+.f-listBox span{
+    height: 30px;
+    margin: 0 22px 0 0;
+    padding: 0 5px;
+    color: #777;
+    border-bottom: 2px solid #fff;
+    font: normal 14px/30px SimSun;
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+.f-listBox .f-on{
+    color: #008842;
+    border-color: #008842;
+    position: relative;
+
+}
+.f-listBox span b{
+    font-weight: 400;
+}
+.f-choice{
+    float: right;
+    line-height: 32px;
+}
+.f-choice p{
+    display: inline-block;
+    margin-left: 10px;
+}
+.f-choice input{
+    vertical-align: middle;
+}
+.f-dis1{
+    padding: 15px 0 15px 0;
+}
+.f-dis1:after{
+    content: "";
+    display:block;
+    clear:both;
+}
+.f-dis1 .f-userImg{
+    width: 66px;
+    float: left;
+    padding: 0 30px 0 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.f-userImg img{
+    width: 60px;
+    height: 60px;
+}
+.f-userImg span{
+    display: block;
+    line-height: 18px;
+    text-align: center;
+}
+.f-userImg span:first-child{
+    font-size: 12px;
+    width: 66px;
+    float: left;
+    padding: 0 30px 0 20px;
+}
+.f-user{
+    overflow: inherit;
+    float: left;
+    width: 772px;
+}
+.f-userCon{
+    height: 12px;
+    line-height: 12px;
+    padding: 10px 15px;
+    background: #f7f7f7;
+}
+.f-userCon1{
+    margin-right: 8px;
+    line-height: 12px;
+}
+.f-star{
+    float: left;
+}
+.f-star1{
+    float: left;
+    overflow: hidden;
+    width: 70px;
+    height: 12px;
+    background: url('http://static01.yiguo.com/www/images/stars.png') 0 -12px no-repeat;
+}
+.f-star1 span{
+    display: block;
+    height: 17px;
+    background: url('http://static01.yiguo.com/www/images/stars.png') no-repeat;
+    width: 0;
+}
+.f-star1 .f-threeGrade{
+    width:60%;
+}
+.f-star1 .f-twoGrade{
+    width:40%;
+}
+.f-star1 .f-fiveGrade{
+    width:100%;
+}
+.f-star1 .f-fourGrade{
+    width:80%;
+}
+.f-star2{
+    margin-right: 8px;
+    line-height: 12px;
+    float: left;
+}
+.f-mass{
+    float: left;
+    margin-left: 20px;
+}
+.f-mass span{
+    padding-right: 15px;
+}
+.f-userTime{
+    color: #777;
+    font-size: 12px;
+    float: right;
+}
+.f-userTime span{
+    margin-left: 20px; 
+}
+.f-appImg{
+    margin-right: 20px;
+    float: right;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.f-appImg b{
+    color: #008842;
+}
+.f-appImg:hover .f-appImg1{
+    display:block;
+}
+.f-appImg1{
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+    display:none;
+}
+.f-appImg1 i{
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: -8px;
+    left: 38px;
+    background: url('http://static01.yiguo.com/www/images/arrow.png') no-repeat;
+}
+.f-appImg1 span{
+    display:block;
+    text-align: center;
+}
+.f-reply{
+    line-height: 22px;
+    margin: 10px 0px;
+    padding: 0px 15px;
+}
+.f-replyAgain{
+    margin-top: 10px;
+}
+.f-replyAgain span{
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    display: inline-block;
+    margin-right: 3px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.f-replyAgain img{
+    width: 60px;
+    height: 60px;
+}
+.f-replyImg{
+    width: 500px;
+    height: 500px;
+    margin-top: 5px;
+    display: none;
+}
+.f-response{
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 18px;
+    color: #008842;
+}
+.f-response ul{
+    list-style-type: none;
+}
+
+.f-response1{
+    float: left;
+    margin-right: 20px;
+}
+
+.f-response2{
+    overflow: hidden;
+}
+.f-personDis{
+    display:none;
+}
+.f-none{
+    padding: 20px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.f-append{
+    width: 230px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: none;
+}
+.f-append>span{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background: #008842;
+    text-align: center;
+    margin-right: 5px;
+    padding: 0;
+    color: #fff;
+}
+.f-shopcar1{
+    z-index: 88;
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 14px;
+    width: 380px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #007f4d;
+}
+.f-append1:hover .f-shopcar1{
+    top: 33px;
+    display: block;
+}
+.f-shopcar1>p{
+    width: 380px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 120px;
+    text-align: center;
+    background: url("http://static01.yiguo.com/www/images/none-bg-w190.jpg") no-repeat center #fff;
+}
+.f-onehundred{
+    display: none;
+}
+.f-append1{
+    width: 123px;
+    font-size: 18px;
+    line-height:25px;
+    display: inline-block;
+    border: 1px solid #008843;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.f-appendNum{
+    display: inline-block;
+}
+.f-appendNum b{
+    color: #008842;
+}
+.f-appendNum>span{
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 10px 4px 15px;
+    font-size: 12px;
+    background: url('http://static01.yiguo.com/www/images/header/header-img.png') no-repeat -112px 0;
+}
+.f-number{
+    width: 24px;
+    display: block;
+    line-height: 12px;
+    margin-right: 4px;
+    text-align: center;
+}
+.f-number1{
+    font-weight: normal;
+    font-family: Arial, "Microsoft YaHei";
+}
+
+
+
+
+
+
+
+
+/* 菜谱详情页*/
+.f-fcontent{
+    width: 1200px;
+    margin:30px auto 50px auto;
+    /* font-family: Arial,Verdana,"\5b8b\4f53"; */
+}
+.f-fcontentL{
+    width: 910px;
+    padding-right: 30px;
+    border-right: 1px solid #aaa;
+    float: left;
+}
+.f-fcontentL li{
+    width: 910px;
+    height: 290px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.f-fcontentL li>a{
+    float: left;
+}
+.f-fImg img{
+    width: 290px;
+    height: 290px;
+    margin-right: 25px;
+}
+.f-fTitle{
+    font: bold 20px "Microsoft YaHei";
+}
+.f-fCon{
+    width: 595px;
+    height: 200px;
+    margin-top: 25px;
+    line-height: 25px;
+    color: #777;
+    overflow: hidden;
+}
+.f-fTitle a:hover{
+    color: #85b100;
+}
+.f-fLike{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #85b100;
+}
+.f-fLike i{
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    display:inline-block;
+    vertical-align: middle;
+    background: url('http://static01.yiguo.com/article/images/recipe/recipe_guide.png') no-repeat -3px -75px; 
+}
+.f-fcontentR{
+    float: right;
+    width: 240px;
+    margin-left: 19px;
+}
+.f-fMenu{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.f-fcontentR h3{
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.f-fMenu .f-Menu1 a{
+    display: block;
+    height: 25px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+.f-Menu1 .f-fcolor{
+    color: #fff;
+    background: #85b100;
+}
+.f-Menu1 a:hover{
+    color: #fff;
+    background: #85b100;
+}
+.f-fconR img{
+    height: 240px;
+    width: 240px;
+}
+.f-fconR  .f-listR1 {
+    margin-bottom: 20px;
+}
+.f-listR1 .f-listR1 img{
+    display: block;
+    margin-bottom: 10px;
+}
+.f-listR1 p:hover{
+   color: #85b100;
+}
+/* 尾部 */
+.e-footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+.e-footwarp {
+    width: 1200px;
+    height: 42px;
+    margin: 0 auto;
+}
+.e-footwarp ul {
+    position: relative;
+}
+.e-footwarp li {
+    list-style: none;
+    float: left;
+    width: 190px;
+    height: 42px;
+    margin-left: 55px;
+    padding-left: 55px;
+}
+.e-footwarp li b {
+    display: block;
+    padding-left: 15px;
+    color: #007f4d;
+    font: normal 18px/25px "Microsoft YaHei";
+    border-left: 1px solid #a6a6a6;
+}
+.e-footwarp li span {
+    display: block;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #444;
+    border-left: 1px solid #a6a6a6;
+}
+.e-footwarp .img1 {
+    position: absolute;
+    top: -3px;
+    left: 45px;
+}
+.e-footwarp .img2 {
+    position: absolute;
+    top: -1px;
+    left: 346px;
+}
+.e-footwarp .img3 {
+    position: absolute;
+    top: -1px;
+    left: 654px;
+}
+.e-footwarp .img4 {
+    position: absolute;
+    top: 1px;
+    left: 952px;
+}
+.e-ad {
+    width: 100%;
+    height: 385px;
+}
+.e-adList {
+    width: 1200px;
+    height: 364px;
+    margin: 50px auto 0;
+}
+.e-adList dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.e-adList dl dt {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+    color: #444;
+    background-image: url(img/footer-icon.png);
+    background-repeat: no-repeat;
+}
+.e-dl1 {
+    background-position: 0 0;
+}
+.e-dl2 {
+    background-position: 0 -23px;
+}
+.e-dl3 {
+    background-position: 0 -46px;
+}
+.e-dl4 {
+    background-position: 0 -69px;
+}
+.e-dl5 {
+    background-position: 0 -92px;
+}
+.e-adList dl dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    font-size: 12px;
+    margin: 15px 0 0 13px;
+}
+.e-adList dl p {
+    height: 22px;
+}
+.e-adList dl a {
+    color: #575556;
+    text-decoration: none;
+}
+.e-adList dl a:hover {
+    text-decoration: underline;
+    color: #008842;
+}
+.e-service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.e-service span {
+    padding: 0 10px;
+}
+.e-cooperation {
+    text-align: center;
+    line-height: 22px;
+}
+.e-cooperation p {
+    font-size: 12px;
+    color: #717171;
+}
+.e-cooperation a {
+    text-decoration: none;
+    color: #717171;
+    margin: 0 10px;
+}
+.e-cooperation a:hover {
+    color: #008842;
+}

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: none;
+}
+body {
+    background-color: #f7f8f8;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.f-fruitName a {
+    font-size: 12px;
+}
+.e-top {
+    width: 1200px;
+    height: 146px;
+}
+.e-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.e-content {
+    width: 1200px;
+    margin: 30px 0 0;
+}
+.e-mainLeft {
+    float: left;
+    width: 910px;
+    padding-right: 30px;
+    border-right: 1px solid #aaa;
+}
+h1 {
+    margin-bottom: 15px;
+    font: bold 20px "Microsoft YaHei";
+    color: #444;
+}
+.e-mainLeft p {
+    font-family: Microsoft YaHei;
+    font-size: 18px;
+    text-align: center;
+    color: #444;
+}
+.e-mainRight {
+    float: right;
+    width: 240px;
+    margin-left: 19px;
+    color: #444;
+}
+.e-rightList {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.e-rightList a {
+    display: block;
+    height: 25px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+.e-rightList a:hover {
+    color: #fff;
+    background-color: #85b100;
+}
+.e-hotTag {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.e-box {
+    margin-bottom: 20px;
+}
+.e-box a:hover {
+    color: #85b100;
+}
+a {
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+}
+.e-hot img {
+    display: block;
+    margin-bottom: 10px;
+}
+.e-news {
+    position: relative;
+    width: 910px;
+    height: 290px;
+    margin-bottom: 50px;
+}
+.e-like {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #85b100;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+}
+.e-like i {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../img/like.PNG) no-repeat -1px -3px;
+}
+.e-rightList span {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.e-rightList a {
+    padding-left: 10px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.e-footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #e0e0e0;
+}
+.e-footwarp {
+    width: 1200px;
+    height: 42px;
+    margin: 0 auto;
+}
+.e-footwarp ul {
+    position: relative;
+}
+.e-footwarp li {
+    list-style: none;
+    float: left;
+    width: 190px;
+    height: 42px;
+    margin-left: 55px;
+    padding-left: 55px;
+}
+.e-footwarp li b {
+    display: block;
+    padding-left: 15px;
+    color: #007f4d;
+    font: normal 18px/25px "Microsoft YaHei";
+    border-left: 1px solid #a6a6a6;
+}
+.e-footwarp li span {
+    display: block;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #444;
+    border-left: 1px solid #a6a6a6;
+}
+.e-footwarp .img1 {
+    position: absolute;
+    top: -3px;
+    left: 45px;
+}
+.e-footwarp .img2 {
+    position: absolute;
+    top: -1px;
+    left: 346px;
+}
+.e-footwarp .img3 {
+    position: absolute;
+    top: -1px;
+    left: 654px;
+}
+.e-footwarp .img4 {
+    position: absolute;
+    top: 1px;
+    left: 952px;
+}
+.e-ad {
+    width: 100%;
+    height: 385px;
+}
+.e-adList {
+    width: 1200px;
+    height: 364px;
+    margin: 50px auto 0;
+}
+.e-adList dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.e-adList dl dt {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+    color: #444;
+    background-image: url(../img/footer-icon.png);
+    background-repeat: no-repeat;
+}
+.e-dl1 {
+    background-position: 0 0;
+}
+.e-dl2 {
+    background-position: 0 -23px;
+}
+.e-dl3 {
+    background-position: 0 -46px;
+}
+.e-dl4 {
+    background-position: 0 -69px;
+}
+.e-dl5 {
+    background-position: 0 -92px;
+}
+.e-adList dl dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    font-size: 12px;
+    margin: 15px 0 0 13px;
+}
+.e-adList dl p {
+    height: 22px;
+}
+.e-adList dl a {
+    color: #575556;
+    text-decoration: none;
+}
+.e-adList dl a:hover {
+    text-decoration: underline;
+    color: #008842;
+}
+.e-service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.e-service span {
+    padding: 0 10px;
+}
+.e-cooperation {
+    text-align: center;
+    line-height: 22px;
+}
+.e-cooperation p {
+    font-size: 12px;
+    color: #717171;
+}
+.e-cooperation a {
+    text-decoration: none;
+    color: #717171;
+    margin: 0 10px;
+}
+.e-cooperation a:hover {
+    color: #008842;
+}

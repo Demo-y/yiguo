@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Arial,Verdana,"宋体";
+}
+.h-openPay {
+    width: 100%;
+    background: #f7f8f9;
+}
+.h-header {
+    width: 100%;
+    height: 78px;
+    background: #e0e0e0;
+}
+.h-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.h-header .h-wrap {
+    height: 78px;
+    padding: 15px 0 5px;
+}
+.h-logo {
+    float: left;
+}
+.h-logo a {
+    display: block;
+    width: 145px;
+    height: 50px;
+    background: url(http://static01.yiguo.com/cart/images/header/logo.png) no-repeat center;
+}
+.h-steps {
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+.h-steps ul {
+    list-style: none;
+}
+.h-steps li {
+    position: relative;
+    float: left;
+}
+.h-steps li b {
+    background: url(http://static01.yiguo.com/cart/images/order-step.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+.h-steps li .h-b1 {
+    background-position: 0 -44px;
+}
+.h-steps li .h-b2 {
+    background-position: -42px 0;
+}
+.h-steps li .h-b3 {
+    background-position: -84px 0;
+}
+.h-steps li span {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333;
+}
+.h-steps .h-on span {
+    color: #008842;
+}
+.h-steps li i {
+    width: 165px;
+    height: 6px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+.h-i1 {
+    background: #008842;
+}
+.h-i2 {
+    background: #fff;
+}
+.c dt {
+    display: block;
+    zoom: 1;
+    padding: 25px 55px;
+    font: bold 24px/51px Microsoft YaHei;
+    color: #008842;
+    border-bottom: 1px solid #e3e6e0;
+    background: #fbfdf6;
+}
+dt i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 68px;
+    height: 68px;
+    margin-right: 20px;
+    background: url(http://static01.yiguo.com/cart/images/confirmpay_icon.png) no-repeat left;
+}
+.c .i1 {
+    background-position: -72px 0;
+   
+}
+.c .h-x {
+    padding: 40px 145px;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #e3e6e0;
+}
+.c ul {
+    list-style: none;
+}
+.c li {
+    display: block;
+    zoom: 1;
+    padding: 15px 0;
+    border-bottom: 1px dashed #e3e6e0;
+}
+.c a {
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+}
+.btn-org{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    border-bottom: none;
+    font: bold 18px/40px microsoft yahei;
+    border: 1px solid #e8380d;
+    background: #e8380d 
+}
+.tip {
+    padding: 40px 145px;
+    font-size: 16px;
+    background: #fbfdf6;
+    border: 1px solid #e3e6e0;
+}
+.tip b {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+}
+.tip b i {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    margin-right: 5px;
+    background: url(http://static01.yiguo.com/cart/images/PickUpCard.png) no-repeat -285px -180px;
+}

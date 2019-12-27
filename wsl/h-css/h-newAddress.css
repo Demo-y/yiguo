@@ -1,0 +1,191 @@
+.c-dailog1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050;
+    overflow: auto;
+    width: 660px;
+    padding: 0 15px;
+    margin: -200px 0 0 -285px;
+    background-color: #f8fffc;
+    border: 1px solid #008842;
+}
+.c-modal {
+    height: 38px;
+    border-bottom: 1px solid #7bb798;
+    position: relative;
+}
+.c-shuttit {
+    cursor: pointer;
+    font-size: 20px;
+    color: #b5c399;
+    font-family: sans-serif;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.c-modal p {
+    color: #008842;
+    height: 38px;
+    font: 14px/38px microsoft yahei;
+} 
+.c-modal i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.c-modal .c-modaladdress { 
+    background: url("http://static01.yiguo.com/cart/images/bg_order.png") no-repeat;
+    background-position: -220px -160px;
+}
+.c-modalbody { 
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px 30px 23px 28px;
+    min-height: 150px;
+    color: #333;
+}
+.c-modalcontrol {
+    margin-bottom: 20px;
+}
+.c-modalcontrol select {
+    width: 110px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.c-modallabel {
+    float: left; 
+    width: 85px;
+    text-align: right;
+    line-height: 26px;
+}
+.c-modalcontrols {
+    margin-left: 85px;
+}
+.c-modalcontrols input {
+    width: 240px;
+    vertical-align: middle;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.c-modalcontrols a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.c-modallast {
+    margin-top: -10px;
+}
+.c-modalcontrols button {
+    background-color: #008842;
+    border: 1px solid #008842;
+    padding: 10px 30px;
+    margin-top: 0;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+}
+.c-modalcontrols button:hover {
+    background-color: #008842;
+}
+.c-modalcontrols .c-selected { 
+    background-color: #f2fcf7;
+    border-color: #7bb798; 
+}
+.c-selected i {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 12px;
+    overflow: hidden;
+    background: url("http://static01.yiguo.com/cart/images/bg_order.png") no-repeat;
+    background-position: -80px -180px;
+}
+.c-modalmust,.c-modalmust4, .c-modalcontrols .c-modalmust3 {
+    color: red;
+} 
+/* 收货地址列表 */
+ul {
+    list-style: none;
+}
+.h-addresslist li{
+    display: inline-block;
+    background-color: #f2fcf7;
+    border-color: 1px solid #008842;
+    padding: 5px 19px 5px 5px;
+}
+.h-addresslist input {
+    margin-right: 5px;
+}
+.h-comp {
+    color: #fff;
+    background: #8cc4a7;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 2px 5px;
+    border: 1px solid #7bb798;
+    border-radius: 3px;
+}
+.c-name {
+    font: bold 18px microsoft yahei;
+    color: #333;
+}
+.h-site {
+    margin: 0 10px;
+    color: #262626;
+}
+.c-del {
+    cursor: pointer;
+    font-size: 20px;
+    color: #b5c399;
+    font-family: sans-serif;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.c-btnbox {
+    margin-top: 45px;
+    text-align: center;
+}
+.c-btnbox a { 
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #008842; 
+    border-radius: 3px;
+}
+.c-btnbox .c-boxOK {
+    color: #fff;
+    background: #008842;
+}
+.c-btnbox .c-boxOK:hover {
+    background: #09964e;
+    cursor: pointer;
+}
+.c-btnbox .c-boxcancel {
+    color: #008842;
+    background: #fff;
+}
+.c-btnbox .c-boxcancel:hover {
+    cursor: pointer;
+}
+.c-name .c-defaultadd {
+    font: normal 12px SimSun;
+    color: #fff;
+    padding: 5px 7px;
+    background: #ef760a;
+    margin-left: 10px;
+} 

@@ -1,0 +1,986 @@
+/* 头部样式 */
+*{
+    padding: 0;
+    margin: 0;
+}
+.b-title {
+    width: 100%;
+    height: 70px;
+    background-color: #e0e0e0;
+}
+.b-middle {
+    width: 1200px;
+    height: 70px;
+    padding: 15px 0px 5px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.b-link {
+    display: inline-block;
+    width: 195px;
+    height: 50px;
+    background: url('http://static01.yiguo.com/www/images/header/logo.png') no-repeat left top;
+}
+.b-login {
+    display: inline-block;
+    position: absolute;
+    width: 56px;
+    height: 28px;
+    font: 28px/1 "Microsoft YaHei";
+    color:#008842;
+    left: 240px;
+    top:20px;
+}
+/* 登录样式 */
+.b-have1 {
+    background: #f7f8f8;
+}
+.b-LOGIN {
+    width: 100%;
+    height: 481px;
+    padding: 30px 0px 0px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.b-big {
+    width: 1200px;
+    margin: auto;
+}
+.b-content {
+    width: 350px;
+    height: 431px;
+    padding: 30px 20px 20px ;
+    background-color: #fff;
+    float: right;
+    margin:20px 105px 0px 0px;
+    border: 1px solid #e3e6e0;
+    position: relative;
+    box-sizing: border-box;
+}
+.b-header {
+    width: 308px;
+    height: 19px;
+    margin: 0px 0px 20px;
+}
+.b-welcom {
+    font: 18px "微软雅黑";
+    color: #262626;
+}
+.b-not {
+    display: inline-block;
+    width: 120px;
+    height: 14px;
+    line-height: 14px;
+    font: 12px Arial, "SimSun";
+    color: #878787;
+    margin-left: 110px;
+}
+.b-enroll {
+    font: 12px Arial, "SimSun";
+    color: #008842;
+}
+.b-content>span {
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    background-image: url('https://login.yiguo.com/Content/img/bg_input.png');
+}
+.b-people {
+    position: absolute;
+    background-position: 0 -120px;
+    left: 21px;
+    top: 70px;
+}
+.b-key1 {
+    position: absolute;
+    background-position: 0 -180px;
+    left: 21px;
+    top: 130px;
+}
+.b-content>.b-phone {
+    width: 306px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 0px 0px 50px;
+    background-color: #fff;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+}
+.b-phone1 {
+    width: 306px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 0px 0px 50px;
+    background-color: #fff;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+    border:none;
+}
+.b-key2 {
+    position: absolute;
+    background-position: 0px -180px;
+    left: 21px;
+    top: 192px;
+}
+.b-verify1 {
+    width: 152px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: -50px;
+    padding-left: 50px;
+}
+.b-img1 {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    top: 191px;
+    display: inline-block;
+    color: rgb(73, 20, 219);
+    font: 25px "华文隶书";
+    letter-spacing: 2px;
+    padding: 0px 5px;
+    line-height: 40px;
+    text-align: center;
+    background-image: url('http://5b0988e595225.cdn.sohucs.com/images/20170919/4a396e47d2c94abda851d0e4778bc889.jpeg');
+    background-repeat: no-repeat;
+    letter-spacing: 2px;
+}
+.b-change {
+    display: inline-block;
+    width: 36px;
+    height: 14px;
+    font: 12px Arial, "SimSun";
+    color: #878787;
+    margin: 13px 0px 0px;
+    position: absolute;
+    left: 250px;
+    cursor: pointer;
+}
+.b-change:hover {
+    color: #008842;
+}
+.b-forget {
+    width: 308px;
+    height: 16px;
+    margin: 0px 0px 20px;
+}
+.b-btn {
+    width: 14px;
+    height: 14px;
+    margin: 0px 9px 0px 0px;
+}
+.b-forget>label {
+    width: 74.33px;
+    height: 14px;
+    color: #878787;
+    font: 12px Arial, "SimSun";
+}
+.b-pswd {
+    display: inline-block;
+    width: 84px;
+    font: 12px Arial, "SimSun";
+    line-height: 14px;
+    margin: 0px 0px 0px 143px;
+    text-decoration: none;
+    color: #878787;
+}
+.b-pswd:hover {
+    color: #008842;
+}
+.b-BTN {
+    outline: none;
+    width: 306px;
+    height: 50px;
+    font: 18px "微软雅黑";
+    background-color: #008842;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+}
+.b-BTN:hover {
+    background-color: #09964e;
+}
+.b-other {
+    height: 14px;
+    margin: 20px 0px 20px;
+    color: #878787;
+    font: 12px Arial, "SimSun";
+}
+.b-content>i {
+    display: inline-block;
+    width: 88px;
+    height: 20px;
+    margin: 0px 20px 0px 0px;
+    background-image: url('https://login.yiguo.com/Content/img/themes/bg_login.png');
+}
+.b-qq {
+   position: absolute;
+   background-position: -60px -200px;
+}
+.b-mic {
+    position: absolute;
+    background-position: -160px -200px;
+    left: 130px;
+}
+.b-life {
+    position: absolute;
+    background-position: -260px 50px;
+    left: 235px;
+}
+.b-life>a {
+    display: block;
+    width: 88px;
+    height: 20px;
+}
+.b-error1 {
+    width: 306px;
+    height: 26px;
+    line-height: 26px;
+    background: #FFEBEB ;
+    border: 1px solid #E4393C;
+    padding: 5px 10px 3px 40px;
+    line-height: 18px;
+    color: #E4393C;
+    font: 12px Arial,Verdana,"宋体";
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.b-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: none;
+}
+.b-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 410px;
+    height: 250px;
+    margin: -170px 0 0 -250px;
+    padding: 45px;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+    z-index: 50;
+}
+.b-X {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41px;
+    height: 41px;
+    background: url(http://img05.yiguoimg.com/e/web/161205/01854/145109/cha.png) no-repeat center center;
+}
+.b-txt {
+    padding: 0 40px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #565656;
+    box-sizing: border-box;
+}
+.b-scanf {
+    display: block;
+    margin: 35px auto 0px;
+}
+
+
+
+
+/* 注册样式 */
+.b-total {
+    width: 100%;
+    background: #f7f8f8;
+}
+.b-outer {
+    width: 100%;
+    height: 663.38px;
+    padding: 30px 0px 0px;
+    box-sizing: border-box;
+}
+.b-package {
+    width: 1200px;
+    height: 633.38px;
+    padding: 40px 0px 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid #a5c9b6;
+    border-top: none;
+    margin: auto;
+}
+.b-already {
+    color: #444;
+    font: 14px "Microsoft YaHei";
+    position: absolute;
+    top: 17px;
+    right:36px;
+}
+.b-already>a {
+    color:#ef760a;
+}
+.b-left {
+    width: 714.67px;
+    height: 542.38px;
+    float: left;
+    position: relative;
+}
+.b-P {
+    width: 573.78px;
+    height: 40px;
+    margin:0px 0px 29px;
+    position: relative;
+}
+.b-P>span {
+    width: 240px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    color: #444;
+    font: 14px "Microsoft YaHei";
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.b-P>input {
+    height: 40px;
+    padding: 0px 0px 0px 14px;
+    margin:0px 20px 0px 0px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+}
+.b-P>input:focus {
+    outline: 1px solid #b1d6ff;
+}
+.b-type {
+    width: 163px;
+}
+#b-img2 {
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    color: rgb(73, 20, 219);
+    font: 22px "华文隶书","微软雅黑";
+    letter-spacing: 2px;
+    padding: 0px;
+    line-height: 45px;
+    text-align: center;
+    background-image: url('http://5b0988e595225.cdn.sohucs.com/images/20170919/4a396e47d2c94abda851d0e4778bc889.jpeg')
+}
+.b-page {
+    width: 42px;
+    padding: 0;
+    color:#666;
+    font: 14px "Microsoft YaHei";
+    font-style: unset;
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    cursor: pointer;
+}
+.b-page:hover {
+    color: #008842;
+}
+.b-call,.b-ipt {
+    width: 306px;
+    background-image: url('https://login.yiguo.com/Content/img/bg_input.png') ;
+    background-repeat: no-repeat;
+}
+.b-call {
+    background-position: 276px -30px; 
+}
+.b-ipt {
+    background-position: 276px -70px;
+}
+.b-get {
+    display: inline-block;
+    width: 118px;
+    height: 40px;
+    background-color: #f7f7f7;
+    font: 14px "Microsoft YaHei";
+    margin: 0px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #008842;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+}
+.b-float {
+    width: 573.78px;
+    height: 19px;
+    font: 14px "Microsoft YaHei";
+    color: #444;
+    margin:0px 0px 29px;
+    padding: 0px 0px 0px 245px;
+    box-sizing: border-box;
+}
+.b-float>a {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    color: #008842;
+    text-decoration: none;
+}
+.b-bottom {
+    height: 50px;
+    margin:0px 0px 29px;
+}
+.b-bottom>input {
+    width: 306px;
+    height: 50px;
+    background-color: #808080;
+    font: 18px "Microsoft YaHei";
+    color: #fff;
+    margin-right: 165px;
+    text-align: center;
+    /* padding-top:14px;
+    box-sizing: border-box; */
+    float: right;
+    border: none;
+}
+.b-right {
+    float: right;
+    width: 330px;
+    height: 390px;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    border-left: 1px dashed #a5c9b6;
+}
+.b-right>img {
+    width: 327px;
+    height: 316px;
+}
+.b-left>span {
+    font: 14px Arial,"Microsoft YaHei";
+    position: absolute;
+}
+.b-left>i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 9px;
+    background-image: url('https://login.yiguo.com/Content/img/themes/bg_login.png');
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#b-i1 {
+    right: 113px;
+    top: 80px;
+}
+#b-span1 {
+    left: 602px;
+    top: 78px;
+}
+#b-i2 {
+    right: 113px;
+    top: 150px;
+}
+#b-span2 {
+    left: 602px;
+    top: 149px;
+}
+#b-i3 {
+    right: 113px;
+    top: 286px;
+}
+#b-span3 {
+    left: 602px;
+    top: 285px;
+}
+#b-i4 {
+    right: 113px;
+    top: 417px;
+}
+#b-span4 {
+    left: 602px;
+    top: 415px;
+}
+.b-isuccess {
+    background-position: 0px -200px;
+}
+.b-iempty {
+    background-position: -20px -200px;
+}
+.b-ierror{
+    background-position: -40px -200px;
+}
+.b-doc,.b-doc2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    filter: alpha(opacity = 20);
+    display: none;
+}
+.b-doc1{
+    display: block;
+}
+.b-have {
+    width: 940px;
+    height: 500px;
+    border: 1px solid #008842;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.b-deal {
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #6ab930;
+    background: #fafcf6;
+    position: relative;
+}
+.b-desk {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #6ab930;
+    text-align: center;
+}
+.b-desk~a:hover {
+    color:#008842;
+}
+.b-off,.b-off2 {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    background: url('https://login.yiguo.com/Content/img/login.png') no-repeat 0 0;
+}
+.b-deal>a {
+    color: #333333;
+    text-decoration: none;
+    outline: none;
+    margin-right: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.b-font {
+    overflow-y: scroll;
+    height: 380px;
+    color: #555 !important;
+    line-height: 22px;
+    margin: 10px;
+}
+.b-font p {
+    line-height: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #3f3f3f;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.b-underline {
+   text-decoration: underline;
+}
+h4 {
+   font-size: 12px;
+}
+.b-http {
+    color: #333333;
+    text-decoration: none;
+    outline: none;
+}
+.b-http:hover {
+    color:#008842;
+}
+.b-continue,.b-continue2 {
+   margin-top: 12px;
+}
+.b-continue>span,.b-continue2>span {
+   display: block;
+   text-align: center;
+   border: 1px solid #6ab930;
+   border-radius: 3px;
+   width: 252px;
+   height: 37px;
+   color: #fff;
+   background: #008842;
+   line-height: 35px !important;
+   font: 16px Arial,Verdana,"宋体";
+   margin: auto;
+}
+.b-continue>span:hover,.b-continue2>span:hover {
+    background: #09964e;
+} 
+.b-font>p {
+    line-height:29px;
+    font-size: 14px;
+    font-family: 微软雅黑, sans-serif;
+}
+.b-index {
+    text-indent:28px;
+}
+.b-index1 {
+    text-indent:32px;
+}
+
+
+
+
+/* 密码修改样式 */
+.b-safe {
+    background: #f7f8f8;
+}
+.b-FORGET {
+    width: 100%;
+    height: 518px;
+    background-color: #fff;
+    padding-top: 60px;
+}
+.b-step,.b-step1 {
+    width: 1200px;
+    height: 296px;
+    margin: 60px auto 262px;
+}
+.b-step1 {
+    display: none;
+}
+.b-step3 {
+    display: none;
+}
+h2 {
+    width: 1200px;
+    height: 48px;
+    margin: 0px auto 60px;
+}
+.b-step>h2 {
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') no-repeat 0 0;
+}
+.b-step1>h2{
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') no-repeat 0 -48px;
+}
+.b-step2>h2 {
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') no-repeat 0 -96px;
+}
+.b-step3>h2 {
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') no-repeat 0 -144px;
+}
+.b-step>p,.b-step1>p,.b-step2>p {
+    margin: 0px auto 29px;
+    width: 792px;
+    height: 40px;
+    position: relative;
+}
+.b-frame {
+    display: inline-block;
+    width: 220px;
+    text-align: right;
+    padding-right: 20px;
+    font: 14px Arial,"Microsoft YaHei";
+    color:#444;
+}
+#b-email {
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    padding-left: 14px;
+    width: 290px;
+}
+input:focus {
+    outline: 3px solid #b1d6ff;
+}
+.b-verify {
+    width: 152px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding-left: 14px;
+}
+.b-img {
+    border: 1px dashed #c1c1c1;
+    /* width: 60px; */
+    height: 38px;
+    display: inline-block;
+    color: rgb(73, 20, 219);
+    font: 25px "华文隶书";
+    letter-spacing: 2px;
+    padding: 0px;
+    line-height: 40px;
+    text-align: center;
+    background-image: url('http://5b0988e595225.cdn.sohucs.com/images/20170919/4a396e47d2c94abda851d0e4778bc889.jpeg')
+
+}
+#b-change {
+    display: inline-block;
+    width: 45px;
+    height: 14px;
+    font: 14px Arial,"Microsoft YaHei";
+    margin: 13px 0px 0px;
+    color: #aaa;
+    cursor: pointer;
+}
+#b-change:hover {
+    color: #008842;
+}
+.b-next>a {
+    text-decoration: none;
+    text-align: center;
+    font: 18px/50px "微软雅黑";
+    display: block;
+    width: 306px;
+    height: 50px;
+    color: #fff;
+    background: #008842;
+    margin: auto;
+}
+#b-spann1,#b-spann2,#b-spann3,#b-spann4 {
+font: 14px Arial,"Microsoft YaHei";
+position: absolute;
+}
+#b-ii1,#b-ii2,#b-ii3,#b-ii4 {
+display: inline-block;
+width: 17px;
+height: 17px;
+margin-right: 9px;
+background-image: url('https://login.yiguo.com/Content/img/themes/bg_login.png');
+background-repeat: no-repeat;
+position: absolute;
+}
+#b-ii1 {
+right: 186px;
+top: 13px;
+}
+#b-spann1 {
+left: 609px;
+top: 12px;
+}
+#b-ii2 {
+right: 225px;
+top: 15px;
+}
+#b-spann2 {
+left: 568px;
+top: 13px;
+}
+#b-spann3,#b-spann4 {
+left: 600px;
+top: 10px;
+}
+#b-ii3,#b-ii4 {
+right: 190px;
+top: 11px;
+}
+option {
+font: 13.3333px Arial;
+color: #000;
+}
+#b-write {
+width: 206px;
+height: 35px;
+margin-right: 20px;
+padding-left: 14px;
+}
+.b-msg {
+display: inline-block;
+width: 123px;
+height: 38px;
+text-decoration: none;
+color: #666666;
+background: #f7f7f7;
+margin-left: 10px;
+border: 1px solid #c1c1c1;
+font: 14px/40px Arial,"微软雅黑";
+text-align: center;
+}
+.b-msg：hover {
+color: #008842;
+}
+.b-star {
+font: 14px Arial,"微软雅黑";
+color: #444;
+}
+.b-new {
+    width: 306px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 14px;
+    box-sizing: border-box;
+    background-image: url('https://login.yiguo.com/Content/img/bg_input.png');
+    background-repeat: no-repeat;
+    background-position: 276px -70px;
+    border: 1px solid #c1c1c1;
+}
+.b-step3>p {
+    width: 1200px;
+    height: 120px;
+    font: bold 18px/120px "Microsoft YaHei";
+    color: #333;
+    margin: auto;
+}
+.b-finish {
+    display: block;
+    margin: auto;
+    width: 260px;
+}
+#b-i5 {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') -420px -194px;
+    margin-right: 20px;
+}
+
+
+
+/* 注册成功样式 */
+.b-all {
+    background-color: #f7f8f8;
+}
+.b-shopping {
+    width: 1200px;
+    height: 230px;
+    margin: 30px auto 60px;
+    background-color: #fff;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.b-lucky {
+    width: 287px;
+    margin: 0px auto 0px;
+}
+.b-lucky>i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0px 20px 0px 0px;
+    background: url('https://login.yiguo.com/Content/img/themes/bg_login.png') -360px -196px no-repeat;
+}
+.b-lucky>span {
+    color: #008842;
+    font: 24px/1 "Microsoft YaHei";
+}
+.b-shopping>a {
+    display: block;
+    height: 40px;
+    width: 128px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    font: 16px "Microsoft YaHei";
+    color: #fff;
+    border-radius: 3px;
+    background-color: #e8380d;
+    text-decoration: none;
+    text-align:center;
+}
+.b-shopping>a:hover {
+    background-color: #f15630;
+}
+
+
+
+/* 底部样式 */
+.e-ad {
+    padding: 30px 0px 0px 0px;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+    height: 423px;
+    box-sizing: border-box;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.e-adList {
+    width: 1200px;
+    height: 364px;
+    margin: 50px auto 0;
+}
+.e-adList dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.e-adList dl dt {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+    color: #444;
+}
+.b-plane {
+    background: url('https://login.yiguo.com/Content/img/footer_icon.png') no-repeat;
+    background-position: 0 0;
+}
+.b-money {
+    background: url('https://login.yiguo.com/Content/img/footer_icon.png') no-repeat;
+    background-position: 0 -23px;
+}
+.b-style {
+    background: url('https://login.yiguo.com/Content/img/footer_icon.png') no-repeat;
+    background-position: 0 -46px;
+}
+.b-sever{
+    background: url('https://login.yiguo.com/Content/img/footer_icon.png') no-repeat;
+    background-position: 0 -69px;
+}
+.b-us {
+    background: url('https://login.yiguo.com/Content/img/footer_icon.png') no-repeat;
+    background-position: 0 -92px;
+}
+.e-adList dl dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    font-size: 12px;
+    margin: 15px 0 0 13px;
+}
+.e-adList dl p {
+    height: 22px;
+}
+.e-adList dl a {
+    color: #575556;
+    text-decoration: none;
+}
+.e-adList dl a:hover {
+    text-decoration: underline;
+    color: #008842;
+}
+.e-service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.e-service span {
+    padding: 0 10px;
+}
+.e-cooperation {
+    text-align: center;
+    line-height: 22px;
+}
+.e-cooperation p {
+    font-size: 12px;
+    color: #717171;
+}
+.e-cooperation a {
+    text-decoration: none;
+    color: #717171;
+    margin: 0 10px;
+}
+.e-cooperation a:hover {
+    color: #008842;
+    text-decoration: underline;
+}

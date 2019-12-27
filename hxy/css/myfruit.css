@@ -1,0 +1,1556 @@
+﻿    * {
+    margin: 0;
+    padding: 0;
+}
+/* 整体 */
+body {
+    font-size: 12px;
+    color: #444;
+    background-color: #f7f8f8;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}  
+.c-myFruit {
+    width: 1200px;
+    margin: auto; 
+}
+/* 头部 */
+.f-list a {
+    text-decoration: none;
+    color: #444;
+}
+/* 顶部 */
+.c-top {
+    margin: 10px 0;
+}
+.c-top a {
+    color: #444;
+    text-decoration: none; 
+}  
+.c-top .c-mine {
+    color: #e8380d;
+    text-decoration:underline;
+}
+.c-top .c-next {
+    display: none;
+}
+/* 全部分类 */ 
+.f-fruitTitle a {
+    text-decoration: underline;
+    font-size: 18px;
+    color: #008842;
+    margin-left: -140px;
+}
+/*列表栏加右部 */
+.c-overall {
+    height: 900px;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* 列表栏 */
+.c-menu {
+    width: 194px;
+    border: 1px solid #eff1ed;
+    background: #fff;
+    float: left;
+}
+.c-list {
+    list-style: none;
+    color: #666;
+}
+.c-num {
+    display: inline-block; 
+    height: 16px;
+    line-height: 16px;
+    border-radius: 16px;
+    margin-left: 10px;
+    padding: 0 4px;
+    color: #fff;
+    background-color: #e93005;
+}
+.c-menu dl {
+    width: 163px; 
+    margin: 15px 15px 20px 15px;
+}
+.c-menu dt, .c-list li {
+    height: 30px;
+    line-height: 30px; 
+    cursor:pointer;
+}
+.c-list li:hover {
+    color: #008842;
+}
+.c-menu dt {
+    font-size: 14px; 
+    font-weight: bold;
+}
+.c-right { 
+    position: relative;
+    width: 984px; 
+    float: left;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.c-color {
+    color: #008842;
+}
+.c-listgift {
+    height: 19px;
+    width: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/* 我的易果用户信息 */
+.c-title { 
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 122px;
+    padding-right: 4px;
+    background: url("../img/c-2.png") no-repeat ;
+    background-position: 980px 0;
+}
+.c-title-left {
+    float: left; 
+    width: 485px;
+    height: 90px;
+    padding: 15px 17px 15px 0;
+    border: 1px solid #e3e6e0;
+    border-right: 0px; 
+    border-radius: 86px 0 0 86px;
+    background: #fff;
+}
+.c-title-photo {
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 0 20px;  
+    text-align: center;
+}
+.c-title-photo img {
+    border: none;
+}
+.c-title-img {
+    background: url("../img/c-6.png") no-repeat;
+    width: 90px;
+    height: 90px; 
+    position: absolute;
+    left: 21px;
+    top:  16px; 
+}
+.c-info {
+    float: left;
+    width: 140px; 
+    margin-left: 20px;
+}
+.c-title-message {
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+.c-user-tel {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    float: left;
+    width: 90px;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.c-modify {
+    display: block; 
+    margin-left: 5px;
+    font-size: 12px;
+    color: #008842;
+    text-decoration: underline;
+}
+.c-level {
+    margin-bottom: 10px;
+}
+.c-grade {
+    height: 16px;
+}
+.c-grade img {
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.c-grade-line {
+    display: block;
+    width: 115px;
+    height: 4px;
+    margin-top: 8px ;
+    background-color: #dfeed3;
+}
+.c-vip-info {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    text-decoration: underline;
+}
+.c-safe {
+    float: left;
+    margin: 0 0 0 20px; 
+    line-height: 30px;
+    color: #666;
+}
+.c-safe-rank b{ 
+    color: #ff0606;
+    font-weight: normal;
+}
+.c-title i {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("../img/c-5.png") no-repeat;
+}
+.c-safe-tel i {
+    background-position: -25px 0;
+}
+.c-safe-email {
+    background-position: 0 0;
+}
+.c-balance i {
+    background-position: -46px 0;
+}
+.c-currency i{
+    background-position: -71px 0;
+}
+.c-discount i {
+    background-position: -95px 0;
+}
+.c-safe-rank .c-safe-a {
+    margin-left: 15px;
+}
+.c-safe-a, .c-safe-a1 {
+    text-decoration: underline;
+    color: #008842
+}
+.c-info-line {
+    position: absolute;
+    left: 503px;
+    top: 1px;
+    width: 17px;
+    height: 122px; 
+    background: url("../img/c-1.jpg") no-repeat
+}
+.c-title-right {
+    float: left;
+    height: 120px;
+    width: 477px;
+    border: 1px solid #e3e6e0;
+    border-right: 0px;
+    border-left: 0px;
+    background: #fff;
+}
+.c-title-right ul{
+    margin-top: 22px;
+    margin-left: 30px;
+    list-style: none;
+}
+.c-title-right li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+ .c-right-list {
+    display: block;
+    height: 15px;
+    color: #5d5d5d; 
+ }
+.c-right-num {
+    font-size: 16px; 
+    color: #e8380d;
+    margin: 10px 0;
+}
+.c-right-change {
+    display: inline-block;
+    padding: 2px 7px;
+    color: #5d5d5d;
+    border: 1px solid #c5c5c5;
+    background: #fafafa;
+    text-decoration: none;
+}
+.c-right-change:hover {
+    color: #008842;
+    border: 1px solid #008842;
+}
+.c-orderIndex {
+    float: left;
+    width: 984px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-orderTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #e7e7e7;
+    background: #eff7f1;
+}
+.c-orderAll {
+    text-decoration: underline;
+    float: right;
+    color: #008842;
+    font-size: 12px;
+    font-weight: normal;
+} 
+.c-orderContent {
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    margin: 5px 636px 5px 20px;
+    text-align: center;
+}
+.c-orderGo {
+    text-decoration: underline;
+    color: #008842;
+}
+.c-shopping {
+    float: left;
+    width: 984px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-shopping table {
+    margin: 13px 20px;
+}
+.c-orderTab {
+    height: 40px;
+    color: #444; 
+    border: 1px solid #ebebeb;
+    background: #f4f4f4;
+}  
+.c-orderTab .c-orderTab2 {
+    font-weight: normal;
+    font-size: 12px;
+    width: 150px;
+} 
+.c-orderTab .c-orderTab1 {
+    font-weight: normal;
+    font-size: 12px;
+    width: 360px;
+}
+.c-order-content {
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    text-align: center;
+} 
+/* 我的订单 */
+.c-order {
+    width: 942px;
+    padding: 20px;
+    padding-bottom: 80px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-order-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #008842;
+    font-size: 14px;
+    border-bottom: 1px solid #008842;
+}
+.c-order-rigth {
+    float: right;
+}
+.c-order-list {
+    margin-left: 15px;
+} 
+.c-order-li {
+    margin: 13px 0 10px ;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #444;  
+    border: 1px solid #ebebeb;
+    background: #f4f4f4;
+}
+.c-order-li span {
+    display: inline-block;
+    text-align: center; 
+}
+.c-order-message {  
+    width: 505px;
+}
+.c-order-message1 {
+    width: 140px; 
+}
+.c-order-content {
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    text-align: center;
+}
+.c-order-content a {
+    text-decoration: underline;
+    color: #008842;
+}
+/* 我的优惠券 */
+.c-coupon {
+    width: 942px;
+    padding: 20px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-coupon-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #008842;
+    font-size: 14px;
+    border-bottom: 1px solid #008842
+}
+.c-coupon-title a{
+    color: #008842;
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    text-decoration: underline;
+}
+.c-coupon-tab {
+    height: 41px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.c-coupon-tab span {
+    display: block;
+    float: left;
+    height: 38px;
+    padding: 0 22px;
+    color: #666;
+    border-bottom: 3px solid #fff;
+    font: bold 14px/38px SimSun;
+    background: #fff;
+    cursor: pointer;
+}
+.c-coupon-tab .c-coupon-on {
+    color: #008842;
+    border-bottom: 3px solid #008842;
+}
+.c-coupon-content {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.c-couponList {
+    float: left; 
+    width: 417px;
+    height: 92px;
+    padding: 14px 22px;
+    background: url("../img/c-12.png") no-repeat;
+    background-position: 0 -131px;
+    margin-bottom: 20px;
+}
+.c-couponPrice {
+    float: left;
+    width: 90px;
+    height: 82px;
+    padding: 5px 0; 
+    color: #f9742e;
+    text-align: center;
+    font: bold 38px Arial, Microsoft Yahei;
+}
+.c-couponcost {
+    font-weight: normal;
+    font-size: 14px; 
+}
+.c-cost {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: arial, simsun;
+}
+.c-fr {
+    float: right;
+    width: 305px;
+    height: 72px;
+    padding: 10px;
+}
+.c-fr p {
+    height: 55px;
+    line-height: 18px;
+}
+.c-fr b {
+    color: #d54f30;
+    font-weight: normal;
+}
+.c-coupon-content .c-currencyPage {
+    margin-top: 30px;
+}
+/* 已使用优惠券 */ 
+.c-tab-con table{
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.c-tab-con .c-changetab {
+    width: 100%;
+}
+.c-tab-con .c-tabth {  
+    height: 40px;
+    color: #333;
+    background: #F7F7F7;
+}
+.c-tab-con tr { 
+    height: 40px;
+}
+.c-tab-con .c-tabth1, .c-minetab .c-tabth1 { 
+    height: 0;
+}
+.c-switchPage1, .c-switchPage2 {
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0 7px;
+    color: #333;
+    cursor: pointer;
+}
+.c-page1 {
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0 7px;
+    color: #333;
+    text-decoration: none;
+}
+.c-pageNow1 {
+    border: 1px solid #008842;
+    color: #008842;
+}
+.c-page1:hover {
+    border: 1px solid #008842;
+    color: #008842;
+}
+/* 我的悠币 */
+.c-currencyMine {
+    width: 942px;
+    overflow: hidden;
+    padding: 20px; 
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-currencyContent {
+    margin: 20px 0;
+}
+.c-currencyContent b {
+    font-weight: normal;
+    color: #e93005;
+}
+.c-forGoods {
+    display: inline-block;
+    width: 96px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 15px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #008842;
+    background: #008842;
+    font-size: 14px;
+    text-decoration: none;
+}
+.c-howGain {
+    color: #ef760a;
+    text-decoration: underline;
+}
+.c-orderGain {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.c-currencyOn{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 16px;
+    color: #008842;
+    font-weight: bold;
+    border-bottom: 3px solid #008842;
+}
+.c-orderSelect {
+    float: right;
+    margin: 10px 0 0 10px;
+}
+.c-currencyMine table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.c-currencyMine tr {
+    height: 40px;
+}
+.c-tabHead {
+    height: 40px;
+    color: #333;
+    background: #F7F7F7;
+}
+.c-currencyPage {
+    float: right;
+    padding-left: 10px;
+    color: #333;
+}
+.c-switchPage, .c-pageNow{   
+    display: block; 
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 3px; 
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0 7px;
+    color: #333; 
+}
+.c-pageNow {
+    color: #008842;
+    border: 1px solid #008842;
+}
+.c-allPage, .c-pageTarget {
+    margin-left: 10px;
+} 
+.c-pageIpt, .c-pageIpt1 {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 28px;
+    height: 22px; 
+    margin:0 10px 0 5px;
+    line-height: 22px;
+}
+.c-pageOk {
+    background: #f4f4f4;
+    cursor: pointer;
+    border: none;
+    color: #333;
+    width: 43px;
+    height: 24px;
+    vertical-align: middle;
+    line-height: 22px;
+    border: 1px solid #ccc;
+}
+/* 我的礼品兑换券 */
+.c-gift {
+    margin-top: 20px; 
+}
+.c-gift h2{
+    text-align: center; 
+}
+/* 购买过的商品 */
+.c-purchased, .c-comment, .c-data ,.c-change, .c-ID, .c-address, .c-firm, .c-alter{
+    width: 942px;
+    overflow: hidden;
+    padding: 20px; 
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.c-purchasedCar {
+    height: 28px;
+    padding: 10px 26px;
+}
+.c-purchasedCar input {
+    margin-right: 30px;
+}
+.c-trolley {
+    display: inline-block;
+    width: 110px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #fff2ec;
+    border: 1px solid #f14b00;
+    color: #f14b00;
+    text-decoration: none;
+    margin:0 10px 0 20px;
+}
+.c-trolley i {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url("../img/c-7.png") no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.c-purchased table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.c-purchased td {
+    height: 40px;
+    text-align: center;
+    background-color: #f1f1f1;
+    font: 12px/40px "SimSun";
+    color: #262626;
+    padding: 0 10px;
+}
+.c-purchased .c-productName {
+    text-align: left;
+}
+/* 点击购物车 */
+.c-dailogcolor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0 ,.2);  
+}
+.c-dailog {
+    z-index: 100;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 418px;
+    height: auto;
+    margin-left: -210px;
+    margin-top: -98px;
+    background: #fff;
+    border: 1px solid #008842;
+}
+.c-dailogtit {
+    padding: 7px 3px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+}
+.c-dailogtit i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 16px;
+    margin-right: 10px;
+    background: url("../img/c-13.png") no-repeat -63px -39px;
+}
+.c-dailogcon {
+    padding: 25px 30px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+}
+.c-dailogcon p {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    margin-bottom: 45px;
+}
+.c-dailogcon button {
+    margin-top: 45px;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #008842; 
+    background-color: #008842;
+    color: #fff;
+    border-radius: 3px;
+} 
+/* 评论商品 */
+.c-commentContent {
+    margin: 25px 0 20px 0;
+}
+.c-commentContent a {
+    padding-left: 10px;
+    color: #ef760a;
+    text-decoration: none;
+}
+.c-goods {
+    height: 41px;  
+    margin-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.c-goods span {
+    display: block;
+    float: left;
+    height: 38px;
+    padding: 0 22px;
+    color: #666;
+    border-bottom: 3px solid #fff;
+    font: bold 14px/38px SimSun;
+    background: #fff;
+    cursor: pointer;
+}
+.c-goods .c-commenton1{ 
+    color: #008842;
+    border-bottom:3px solid #008842;
+}
+.c-commentonContent{
+    padding: 10px;
+} 
+/* 卡包余额 */
+.c-account {
+    margin-left: 184px;
+    font-weight: bold;
+}
+.c-account a {
+    text-decoration: underline;
+    color: #0000ff;
+}
+.c-code {
+    text-align: center;  
+}
+.c-code img{
+    width: 125px;
+    height: 125px;
+} 
+/* 个人资料 */
+.c-dataBasic {
+    margin: 30px 0 28px 30px;
+}
+.c-dataPhoto {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.c-datalabel {
+    float: left; 
+    width: 100px;
+    text-align: right;
+    line-height: 30px;
+}
+.c-dataright1 {
+    margin-left: 20px;
+    cursor: pointer;
+}
+.c-dataright, .c-dataright2 {
+    margin-left:  120px;  
+    line-height: 30px;
+}
+.c-dataipt {
+    width: 284px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    margin-right: 15px;
+    border: 1px solid #c1c1c1;
+} 
+.c-namelength i{
+    display: inline-block;  
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 9px;
+    background: url("../img/c-9.png") -20px -200px no-repeat;
+}
+.c-fruitAPP {
+    color: #008842;
+}
+.c-fruitimg {
+    width: 125px;
+    height: 125px;
+}
+.c-noemail {
+    cursor: pointer;
+    text-decoration: none; 
+    color:  #54a110;
+    border-bottom: 1px solid #54a110;
+}
+.c-dataemail {
+    text-decoration: none; 
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 23px;
+    padding: 2px;
+    color: #fff;
+    background-color: #008842;
+}
+.c-dataright button, .c-altersafer button {
+    width: 306px;
+    background: #008842;
+    border: none;
+    color: #fff;
+    height: 50px;
+    text-align: center; 
+    font: 18px/50px "Microsoft YaHei";
+}
+.c-dataright2 input {
+    width: 284px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    margin-right: 15px;
+    border: 1px solid #c1c1c1;
+}
+/* 账号安全 */
+.c-ID {
+    padding-bottom: 40px;
+}
+.c-IDtitle { 
+    padding: 30px 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+}
+.c-IDtitle img { 
+    float: left;
+    margin-right: 20px;
+}
+.c-IDphoto { 
+    width: 90px;
+    height: 90px;
+    position: absolute; 
+    background: url("../img/c-6.png") no-repeat;
+    top: 30px;  
+}
+.c-IDusername { 
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.c-IDedit {
+    border-bottom: 1px solid #54a110;
+    font-size: 12px;
+    color: #008842;
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 20px;
+}
+.c-IDedit i {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    vertical-align: middle;
+    background: url("../img/c-10.png") no-repeat;
+}
+.c-idlist {
+    height: 70px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.c-field {
+    float: left;
+    height: 50px;
+    color: #444;
+    border-right: 1px solid #e6e6e6;
+    margin: 10px 34px 10px 0;
+    padding: 0 30px;
+    font: 18px/50px "Microsoft YaHei";
+}
+.c-supply {
+    float: left;
+    width: 620px;
+    padding: 12px 0;
+    line-height: 22px; 
+    color: #666;
+}
+.c-red {
+    color: #e8380d;
+    line-height: 46px;
+}
+.c-operate {
+    float: left;
+}
+.c-operate a {
+    display: inline-block;
+    text-decoration: none;
+    width: 64px;
+    height: 28px;
+    background-color: #008842;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 28px;
+}
+.c-operate a:hover { 
+    cursor: pointer;
+}
+.c-operatealter:hover, .c-operateset:hover {
+    background-color: #09964c;
+}
+.c-operate .c-white {
+    color: #008842;
+    border:1px solid #008842;
+    background: #fff;
+} 
+.c-field i {
+    display: inline-block; 
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background: url("../img/c-11.png") no-repeat;
+    margin-right: 20px;
+}
+.c-field .c-fieldpass {
+    background-position: 0 0;
+}
+.c-field .c-fieldemail {
+    background-position: -30px 0;
+}
+.c-supplytel {
+    font-weight: bold;
+    color: #333;
+}
+/* 修改密码 */
+.c-altertit {
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.c-alterlist {
+    font-size: 14px;
+    margin-top: 40px;
+    height: 508px;
+}
+.c-altersafe {
+    margin-bottom: 40px;
+}
+.c-altersafel {
+    float: left;
+    display: block;
+    width: 300px;
+    text-align: right;
+    line-height: 40px;
+}
+.c-altersafer {
+    margin-left: 315px;
+    line-height: 40px;
+}
+.c-altersafer input { 
+    width: 290px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 14px;
+    border: 1px solid #c1c1c1;
+    margin-right: 16px;
+    vertical-align: middle;
+    background: url("../img/c-15.png")  278px -70px  no-repeat; 
+}
+.c-alterkey { 
+    color: #ff0000;
+    margin-left: 3px;
+}
+/* 设置支付密码 */
+.c-altertimer {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.c-altertimer a { 
+    text-decoration: none;
+    height: 30px;
+    padding: 4px 7px 4px 7px;
+    line-height: 30px;
+    border: 1px solid #37a937;
+    border-radius: 3px;
+    color: #888;
+}
+.c-altertimer a:hover {
+    cursor: pointer;
+    color: #008842;
+    border: 1px solid #008842;
+}
+#c-alteript1 {
+    background: none;
+}
+/* 收货地址管理 */
+.c-addressContent {
+    margin: 15px 0;
+}
+.c-newaddress {
+    padding: 7px 10px;
+    margin-right: 20px;
+    color: #fff;
+    border: 1px solid #008842;
+    background: #008842;
+}
+.c-addressnum {
+    font-size: 12px;
+    color: #5fad26;
+}
+/* 新增收货地址 */
+.c-dailog1 {
+    display: none;
+    position: fixed;
+    top: -25%;
+    left: 50%;
+    z-index: 100;
+    overflow: auto;
+    width: 540px;
+    padding: 0 15px;
+    margin: -200px 0 0 -285px;
+    background-color: #fafcf6;
+    border: 1px solid #6ab930;
+}
+.c-modal {
+    border-bottom: 1px solid #6ab930;
+    position: relative;
+}
+.c-shuttit {
+    cursor: pointer;
+    font-size: 20px;
+    color: #b5c399;
+    font-family: sans-serif;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.c-modal h3 {
+    color: #5caa22;
+    height: 38px;
+    font: 14px/38px microsoft yahei;
+} 
+.c-modal .c-modaladdress { 
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("../img/c-14.png") no-repeat;
+    background-position: -220px -160px;
+}
+.c-modalbody { 
+    max-height: 400px;
+    padding: 15px 30px 23px 28px;
+    min-height: 150px;
+    color: #333;
+}
+.c-modalcontrol {
+    margin-bottom: 20px;
+}
+.c-modalcontrol select {
+    width: 110px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.c-modallabel {
+    float: left; 
+    width: 85px;
+    text-align: right;
+    line-height: 26px;
+}
+.c-modallabel span {
+    color: #ff5317;
+    padding-right: 5px;
+}
+.c-modalcontrols {
+    margin-left: 85px;
+}
+.c-modalcontrols input {
+    width: 240px;
+    vertical-align: middle;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.c-modalcontrols a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.c-modallast {
+    margin-top: -10px;
+}
+.c-modalcontrols button {
+    background-color: #70bd2c;
+    border: 1px solid #62b01e;
+    padding: 10px 30px;
+    margin-top: 0;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+}
+.c-modalcontrols button:hover {
+    background-color: #008842;
+}
+.c-modalcontrols .c-selected { 
+    background-color: #f2fcf7;
+    border-color: #7bb798; 
+}
+.c-selected i {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 12px;
+    overflow: hidden;
+    background: url("../img/c-14.png") no-repeat;
+    background-position: -80px -180px;
+}
+.c-modalmust,.c-modalmust4, .c-modalcontrols .c-modalmust1, .c-modalcontrols .c-modalmust3 {
+    color: red;
+} 
+/* 收货地址列表 */
+ul {
+    list-style: none;
+}
+.c-addresslist li{
+    position: relative;
+    width: 900px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+}
+.c-name {
+    font: bold 18px microsoft yahei;
+    color: #333;
+}
+.c-addresslist dt {
+    padding-bottom: 10px;
+}
+.c-addresslist dd {
+    line-height: 25px;
+}
+.c-addresslist dd span {
+    display: inline-block;
+    width: 77px;
+    text-align: right;
+}
+.c-del {
+    cursor: pointer;
+    font-size: 20px;
+    color: #b5c399;
+    font-family: sans-serif;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.c-modalbtns {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.c-modalbtns a{
+    padding-left: 15px;
+    color: #666;
+    text-decoration: none; 
+}
+.c-modalbtns .c-modaldefault:hover {
+    cursor: pointer;
+    color: #ef760a;
+}
+.c-modalbtns .c-modaledit:hover {
+    cursor: pointer;
+    color: #5fad26;
+}
+.c-btnbox {
+    margin-top: 45px;
+    text-align: center;
+}
+.c-btnbox a { 
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #008842; 
+    border-radius: 3px;
+}
+.c-btnbox .c-boxOK {
+    color: #fff;
+    background: #008842;
+}
+.c-btnbox .c-boxOK:hover {
+    background: #09964e;
+    cursor: pointer;
+}
+.c-btnbox .c-boxcancel {
+    color: #008842;
+    background: #fff;
+}
+.c-btnbox .c-boxcancel:hover {
+    cursor: pointer;
+}
+.c-name .c-defaultadd {
+    font: normal 12px SimSun;
+    color: #fff;
+    padding: 5px 7px;
+    background: #ef760a;
+    margin-left: 10px;
+} 
+/* 企业福利入口 */
+.c-firmtit {
+    margin: 30px 0 60px 30px;
+}
+.c-firmgroup {
+    padding-left: 20%;
+    margin-bottom: 20px;
+}
+.c-firmlabel {
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    line-height: 30px;
+}
+.c-firmright {
+    margin-left: 120px;
+    line-height: 30px;
+}
+ .c-firmtxt{
+    width: 284px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    margin-right: 15px;
+    border: 1px solid #c1c1c1;
+}
+.c-firmradio {
+    vertical-align: middle;
+}
+.c-firmdeal {
+    color:#008842;
+    text-decoration: none; 
+}
+.c-firmdeal:hover {
+    cursor: pointer;
+}
+.c-firmif {
+    margin-left: 95px; 
+    color: #e8340c;
+}
+.c-firmbtn {
+    width: 306px;
+    background-color:#008842;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    font: 18px/50px "Microsoft YaHei";
+}
+/* 易果企业认证协议 */
+.c-protocol {
+    width: 650px; 
+    margin-left: -325px;
+    margin-top: -222px;
+    z-index: 100;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #008842;
+}
+.c-protocoltit {
+    padding: 7px 3px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+}
+.c-protocolcon {
+    padding: 25px 30px;
+    line-height: 22px;
+    font-size: 12px;
+}
+.c-protocolcon p {
+    color: #3f3f3f;
+    text-align: center;
+} 
+.c-protocolcon .c-protocoltit2 {
+    margin-top: 10px;
+}
+.c-protocolbtn {
+    text-align: center;
+    margin-top: 20px;
+}
+.c-protocol .c-agr {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #008842; 
+    background-color: #008842;
+    border-radius: 3px;
+}
+.c-protocol .c-agr:hover {
+    background-color: #09964c;
+    cursor: pointer;
+}
+/* 在线退换货 */
+.c-record {
+    display: none;
+} 
+.c-change-title { 
+    height: 41px; 
+    border-bottom: 1px solid #ebebeb;
+}
+.c-apply {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 90px 0;
+    margin-bottom: 20px;
+}
+.c-change-title span {
+    display: block;
+    float: left;
+    height: 38px;
+    padding: 0 22px;
+    color: #666;
+    border-bottom: 3px solid #fff;
+    font: bold 14px/38px SimSun;
+    background: #fff;
+    cursor: pointer;
+}
+
+.c-change-title .c-on {
+    color: #008842;
+    border-bottom: 3px solid #008842;
+} 
+/* 申请退换货 */ 
+.c-apply p {
+    text-align: center;
+    color: #444;
+}
+/* 退换货记录 */
+ .c-content {
+    width: 942px; 
+}
+.c-record-left {
+    padding: 15px 0; 
+}
+.c-record-right {
+    float: right;
+    margin-top: -33px;
+} 
+.c-tab {
+    width: 100%;
+    margin: 10px 0; 
+    text-align: center;
+}
+.c-tab-head {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;  
+    color: #333; 
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    background: #f4f4f4;
+}
+.c-tab-head .c-tabname{
+    width: 40% ;
+}
+.c-tab-head td {
+    width: 15%;
+}
+.c-tab-list {
+    padding-left: 25px;
+    margin-bottom: 60px; 
+    color: #444;
+} 
+/* 商品投诉 */
+.c-complain-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #008842;
+    font-size: 14px;
+    border-bottom: 1px solid #008842;
+}
+.c-right h1 {
+    font-size: 12px;
+    color: #444;
+}
+.c-relation {
+    text-decoration: underline;
+    color: #0000ff;
+}   
+/* 底部 */
+.e-ad {
+    width: 100%;
+    height: 385px;
+}
+.e-adList {
+    width: 1200px;
+    height: 364px;
+    margin: 50px auto 0;
+}
+.e-adList dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+}
+.e-adList dl dt {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+    color: #444;
+    background-image: url(../img/footer-icon.png);
+    background-repeat: no-repeat;
+}
+.e-dl1 {
+    background-position: 0 0;
+}
+.e-dl2 {
+    background-position: 0 -23px;
+}
+.e-dl3 {
+    background-position: 0 -46px;
+}
+.e-dl4 {
+    background-position: 0 -69px;
+}
+.e-dl5 {
+    background-position: 0 -92px;
+}
+.e-adList dl dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    font-size: 12px;
+    margin: 15px 0 0 13px;
+}
+.e-adList dl p {
+    height: 22px;
+}
+.e-adList dl a {
+    color: #575556;
+    text-decoration: none;
+}
+.e-adList dl a:hover {
+    text-decoration: underline;
+    color: #008842;
+}
+.e-service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.e-service span {
+    padding: 0 10px;
+}
+.e-cooperation {
+    text-align: center;
+    line-height: 22px;
+}
+.e-cooperation p {
+    font-size: 12px;
+    color: #717171;
+}
+.e-cooperation a {
+    text-decoration: none;
+    color: #717171;
+    margin: 0 10px;
+}
+.e-cooperation a:hover {
+    color: #008842;
+}

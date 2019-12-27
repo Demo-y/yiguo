@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="h-css/h-order.css">
+    <link rel="stylesheet" href="h-css/h-newAddress.css">
+    <link rel="stylesheet" href="../fm/index.css">
+    <link rel="stylesheet" href="../lxd/css/e-common.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <!-- 顶部工具 -->
+     <div class="a-siteNav">
+        <div id="a-siteNav">
+            <ul class="a-siteNavLeft">
+                <li>欢迎光临易果生鲜！</li>
+                <li>
+                    <img class="a-warn" src="http://img05.yiguoimg.com/d/web/190408/00592/145951/notice.png" alt="">
+                    <a href="http://www.yiguo.com/help/policenotice.html" target="_blank">网警提示</a>
+                </li>
+            </ul>
+            <ul class="a-siteNavRight">
+
+                <li class="h-phone"><a href="../hxy/myfruit.html"></a></li>
+                <li><a href="../fm/index.html">[退出]</a></li>
+                <li class="a-myyiguo">
+                    <a href="../hxy/myfruit.html">
+                        <i class="a-icont1"></i> 我的易果
+                        <s class="a-arrows"></s>
+                    </a>      
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的优惠券</a></li>
+                        <li><a href="">我的收藏 </a></li>
+                        <li><a href="">我的悠币 </a></li>
+                        <li><a href="">我的退换货</a></li>
+                        <li><a href="">预存款查询</a></li>
+                        <li><a href="">立即充值</a></li>
+                    </ul>
+                </li>
+                <li class="a-mobileyiguo">
+                    <a href="">
+                        <i class="a-icont3"></i>手机易果 
+                        <s class="a-arrows"></s>
+                    </a>
+                    <ul>
+                        <li><img src="http://static01.yiguo.com/www/images/header/qrcode_app.jpg" alt="">
+                            <span> 扫一扫下载APP</span>
+                        </li>
+                        <li><img src="http://static01.yiguo.com/www/images/header/qrcode_wechat.jpg" alt="">
+                            <span> 易果生鲜微信</span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="a-icont5"></i>礼品卡绑定</a></li>
+                <li><a href=""><i class="a-icont6"></i>礼品兑换券入口</a></li>
+                <li><a href="../myy/BusinessQualification.html"><i class="a-icont7"></i> 营业资质</a></li>
+                <li><a href=""><i class="a-icont8"></i>人才招聘</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h-order">
+        <div class="h-header">
+            <div class="h-wrap">
+                <div class="h-logo">
+                    <a href="../fm/index.html" target="_blank"></a>
+                </div>
+                <div class="h-steps">
+                    <ul>
+                        <li class="h-on">
+                            <b class="h-b1"></b>
+                            <span>我的购物</span>
+                        </li>
+                        <li class="h-on">
+                            <i class="h-i1"></i>
+                            <b class="h-b2"></b>
+                            <span>填写订单信息</span>
+                        </li>
+                        <li>
+                            <i class="h-i2"></i>
+                            <b class="h-b3"></b>
+                            <span>成功提交订单</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="h-wrap">
+            <h2></h2>
+            <div class="h-order-alert">
+                <div class="h-information h-share">
+                    <h3>
+                        <i></i>
+                        收货信息
+                    </h3>
+                    <div class="h-newAddress">
+                        <i></i>
+                        使用新地址
+                    </div>
+                    <div class="c-dailog1">
+                        <div class="c-modal">
+                            <a class="c-shuttit">×</a>
+                            <p>
+                                <i class="c-modaladdress"></i>
+                                使用新地址
+                            </p>
+                        </div>
+                        <div class="c-modalbody">
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel">
+                                    收货人姓名：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <input type="text" name="" id="c-modalname">
+                                    <span class="c-modalmust"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel">
+                                    手机号码：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <input type="text" name="" id="c-modalphone">
+                                    <span class="c-modalmust"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel">
+                                    收货地址：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <select name="" id="c-modalprivnce">
+                                        <option value="选择省份">选择</option> 
+                                    </select>
+                                    <select name="" id="c-modalcity">
+                                        <option value="选择城市"></option>
+                                    </select>
+                                    <select name="" id="c-modalarea">
+                                        <option value="选择区域"></option>
+                                    </select>
+                                    <span class="c-modalmust"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel">
+                                    详细地址：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <input type="text" name="" id="c-modaldetail">
+                                    <span class="c-modalmust"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel"> 
+                                    固定电话：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol">
+                                <div class="c-modallabel">
+                                    邮政编码：
+                                </div>
+                                <div class="c-modalcontrols">
+                                    <input type="text" name="" id="c-modalemail">
+                                    <span class="c-modalmust2"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol"> 
+                                <div class="c-modalcontrols">
+                                    <a>
+                                        家庭地址
+                                        <i></i>
+                                    </a>
+                                    <a>
+                                        公司地址
+                                        <i></i>
+                                    </a>
+                                    <span class="c-modalmust3"></span>
+                                </div>
+                            </div>
+                            <div class="c-modalcontrol c-modallast"> 
+                                <div class="c-modalcontrols">
+                                    <button>保存<tton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-shippingInformation h-share">
+                    <h3>
+                        <i></i>
+                        配送信息
+                    </h3>
+                    <div class="h-delivery">
+                        <div style="color:red;">请选择有效的收货信息后确认配送信息！</div>   
+                    </div>
+                </div>
+                <div class="h-i-payment h-share">
+                    <h3>
+                        <i></i>
+                        支付信息
+                    </h3>
+                    <div class="h-payment">
+                        <div style="color:red;">请选择有效的收货信息后确认支付方式！</div>
+                    </div>
+                </div>
+                <div class="h-i-invoice h-share">
+                    <h3>
+                        <i></i>
+                        发票信息
+                    </h3>
+                    <div class="h-invoice">
+                        <label>
+                            <input type="checkbox">
+                            需要发票
+                            <div class="h-promptbox">
+                                <span class="h-hint" >温馨提示</span>
+                                <div class="h-dorpdown">
+                                    <i class="up"></i>
+                                    <p class="center"><strong>温馨提示</strong></p>
+                                    <p>尊敬的顾客：</p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照国家有关税收法律法规，在您购买应税货物或接受应税服务的同时，有权索取增值税发票。
+                                        如您为自然人以外的单位或个体工商户，符合规定条件的,索取增值税专用发票时，应向我们提供购买方名称、纳税人识别号、地址电话、开户行及账号信息等四项信息，不需相关证件或其他证明材料。
+                                        您在索取增值税普通发票时，不需提供相关证件或其他证明材料。
+                                    </p>
+                                    <p class="mt10">欢迎您对我们的工作进行监督。</p>
+                                    <p>主管税务机关投诉举报电话：&nbsp;&nbsp;&nbsp;12366</p>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="h-invoice-item">
+                            <div class="h-invoiceType">
+                                发票类型：
+                                <span>电子发票</span>
+                                <div class="h-promptbox">
+                                    <i class="h-question"></i>
+                                    <div class="h-dorpdown1">
+                                        1.&nbsp;发票金额不含礼品卡支付和U币抵扣部分；<br>
+                                        2.&nbsp;按国家税务局规定，储值卡和充值卡仅开具“不征税”发票类型；<br>
+                                        3.&nbsp;电子发票确认收货后可在订单详情中查看；<br>
+                                        注：电子发票是税务局认可的有效收付款凭证，其法律效力、基本用途及使用规定同纸质发票，如需纸质发票可自行下载电子发票并打印。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-add-infor">
+                                <i></i>
+                                新增发票信息
+                            </div>
+                            <div class="h-invoice-infor">
+                                <p>发票类型：普通发票</p>
+                                <p>
+                                    发票抬头：
+                                    <label>
+                                        <input type="radio" id="self" name="infor" checked="">个人
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="infor" id="comp">单位
+                                    </label>
+                                </p>
+                                <div class="h-company">
+                                    <input type="text" placeholder="请填写单位名称">
+                                    <input type="text" placeholder="请填写纳税人识别号">
+                                </div>
+                                <p class="h-gray3">
+                                    *应国税总局2017年第16号规定，开具增值税普通发票时，应在“购买方纳税人识别号”栏填写
+                                    <span class="red">购买方的纳税人识别号</span>
+                                    或
+                                    <span class="red">统一社会信用代码</span>。<br>
+                                    不符合规定的发票，不得作为税收凭证。
+                                </p>
+                                <div class="h-save">
+                                    <span class="save">保存</span>
+                                    <span class="cancle">取消</span>
+                                </div>
+                            </div>
+                            <div class="h-tip">
+                                * 按国家税务局规定，储值卡和充值订单仅可开具“不征税”发票类型。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-commodity h-share">
+                    <h3>
+                        <i></i>
+                        商品信息
+                    </h3>
+                    <span class="h-backcart">返回购物车>></span>
+                    <div class="h-commodityInformation">
+                        <table class="h-table">
+                            <tr class="h-append">
+                                <th width="590">商品名称</th>
+                                <th>单价</th>
+                                <th>数量</th>
+                                <th>规格</th>
+                                <th>金额小计</th>
+                            </tr>
+                        </table>
+                        <div class="h-fl">
+                            补充说明：
+                            <input type="text" placeholder="选填，补填要求">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-discount h-share">
+                    <h3>
+                        <i></i>
+                        优惠券信息
+                    </h3>
+                    <div class="h-voucher">
+                        <div class="item-tit" style="cursor:pointer;">
+                            <i></i>
+                            使用优惠券 您当前订单共有&nbsp;
+                            <span id="totalCount" style="margin-left: 2px; color: #e4393c; font-family: verdana;">
+                                0
+                            </span>
+                            &nbsp;张优惠券
+                        </div>
+                        <div class="h-item-wrap">
+                            <div class="sub-tit" style="cursor:pointer;">
+                                <i></i>
+                                使用悠悦会优惠券
+                                <span style="margin-left: 2px; color: #e4393c; font-family: verdana;">
+                                    (0)
+                                </span>
+                            </div>
+                            <div class="sub-tit" style="cursor:pointer;">
+                                <i></i>
+                                使用绑定账户优惠券
+                                <span style="margin-left: 2px; color: #e4393c; font-family: verdana;">
+                                    (0)
+                                </span>
+                            </div>
+                            <div>
+                                <div class="sub-tit sub-tit2" style="cursor:pointer;">
+                                    <i></i>
+                                    手工输入优惠券
+                                </div>
+                                <div class="h-sub-warp2" style="display: none;">
+                                    优惠券券号：
+                                    <input type="text" placeholder="请输入优惠券券号">
+                                    <span class="h-verification">验证</span>
+                                    <div class="h-ver">
+                                        <input type="text" placeholder="验证码">
+                                        <img src="http://trade.yiguo.com/verifycode?_t=1571668763288" alt="">
+                                        <span>换一张</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-tit1" style="cursor:pointer;">
+                            <i></i>
+                            使用现金券
+                        </div>
+                        <div class="h-item-wrap1">
+                            现金券券码：
+                            <input type="text" placeholder="请输入现金券券码">
+                            密码：
+                            <input type="text" placeholder="请输入密码" class="h-pass">
+                            <span>绑定</span>
+                            <p>用券必读：现金券不设找零，一张券仅限使用一次</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-orderer h-share">
+                    <h3>
+                        <i></i>
+                        订货人信息
+                    </h3>
+                    <div class="h-order1">
+                        <div>订货人姓名：<input id="OrderUserName" type="text" class="input" placeholder="非必填" maxlength="20"></div>
+                        <div>订货人手机：<input id="OrderUserMobile" type="text" class="input" placeholder="非必填" maxlength="15"></div>
+                    </div>
+                </div>
+                <div class="h-order2">
+                    <p class="h-right">商品金额：￥<span class="h-je"></span></p>
+                    <p class="h-right">运费：￥<span>0.00</span></p>
+                    <p class="h-right">礼品卡支付：￥-<span>0.00</span></p>
+                    <p class="h-right">优惠金额：￥-<span>0.00</span></p>
+                    <p class="h-right">悠币：<span>0.00</span></p>
+                </div>
+                <div class="h-order-foot">
+                    <div class="h-wrap1"> 
+                        <div class="h-right">
+                            <span class="h-none">运费：<em>￥</em><em>0.00</em>元</span>
+                            <span class="h-none">商品金额：<em>￥</em><em class="h-em"></em>元</span>
+                            <span class="h-pay">应付款：<em>￥</em><em class="h-em"></em></span>
+                            <a href="h-openPay.html" class="h-btn">提交订单</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="e-ad">
+            <div class="e-adList">
+                <dl>
+                    <dt class="e-dl1">新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">购物流程</a>
+                        </p>
+                        <p>
+                            <a href="">订购方式</a>
+                        </p>
+                        <p>
+                            <a href="">悠币说明</a>
+                        </p>
+                        <p>
+                            <a href="">会员等级</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="e-dl2">付款方式</dt>
+                    <dd>
+                        <p>
+                            <a href="">支付方式</a>/
+                            <a href="">发票说明</a>
+                        </p>
+                        <p>
+                            <a href="">礼品卡章程</a>
+                        </p>
+                        <p>
+                            <a href="">优惠代码</a>
+                        </p>
+                        <p>
+                            <a href="">卡券购买章程</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="e-dl3">配送方式</dt>
+                    <dd>
+                        <p>
+                            <a href="">配送运费</a>
+                        </p>
+                        <p>
+                            <a href="">时间及范围</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="e-dl4">售后服务</dt>
+                    <dd>
+                        <p>
+                            <a href="">退换货政策</a>
+                        </p>
+                        <p>
+                            <a href="">退换货流程</a>
+                        </p>
+                        <p>
+                            <a href="">常见问题</a>
+                        </p>
+                        <p>
+                            <a href="">极速退款</a>
+                        </p>
+                        <p>
+                            <a href="">投诉与建议</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="e-dl5">关于我们</dt>
+                    <dd>
+                        <p>
+                            <a href="">公司介绍</a>
+                        </p>
+                        <p>
+                            <a href="">联系我们</a>
+                        </p>
+                        <p>
+                            <a href="">业务合作</a>
+                        </p>
+                        <p>
+                            <a href="">诚信举报</a>
+                        </p>
+                        <p>
+                            <a href="">用户协议</a>
+                        </p>
+                        <p>
+                            <a href="">隐私协议</a>
+                        </p>
+                        <p>
+                            <a href="">友情链接</a>
+                        </p>
+                    </dd>
+                </dl>
+                <div class="e-service">
+                    <span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+                    <span>周一至周日 9:00-21:00</span>
+                </div>
+                <div class="e-cooperation">
+                    <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                    <p>
+                        <a href="">沪ICP备09008015号</a>Copyright ? 2005-2019 版权所有
+                    </p>
+                    <p>
+                        <a href="">
+                            <img src="http://img05.yiguoimg.com/d/web/190617/00191/142933/ordermeal.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="http://img06.yiguoimg.com/d/web/190527/00191/172725/report.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="http://img06.yiguoimg.com/d/web/190510/00192/161235/wxb.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png"
+                                alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://img05.yiguoimg.com/d/web/190618/00191/143543/962110.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="http://img06.yiguoimg.com/d/web/181227/00281/143951/footer_copy.jpg" width="36"
+                                height="47" alt="">
+                        </a>
+                        <a href="" style="display: inline-block; height: 30px;">
+                            <img src="http://www.beian.gov.cn/file/ghs.png" alt="" style="float: left">
+                            <span
+                                style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color:#939393;">沪公网安备
+                                31010502000002号</span>
+                        </a>
+                    </p>
+                    <p>违法和不良信息举报电话 400-000-7788</p>
+                </div>
+            </div>
+        </div>
+    <script>
+    $(function(){
+        var phone=window.sessionStorage.getItem("phone");  
+    $(".h-phone").html(phone)
+//新地址
+        $(".h-newAddress").click(function(){
+           $(".c-dailog1").show();
+           //取消
+           $(".c-shuttit").click(function(){
+            $(".c-dailog1").hide();
+           })
+            $("#c-modalname").val(""); 
+            $("#c-modalphone").val(""); 
+            $("#c-modalprivnce").val("选择省份"); 
+            $("#c-modalcity").empty();
+            $("#c-modalcity").append(`
+                <option value="选择城市">选择城市</option>
+            `)
+            $("#c-modalarea").empty();
+            $("#c-modalarea").append(`
+                <option value="选择区域">选择区域</option>
+            `)
+            $("#c-modalarea").removeClass("c-modalmust1")
+            $("#c-modaldetail").val(""); 
+            $(".c-modalcontrols input").val(""); 
+            $(".c-modalcontrols a").removeClass("c-selected")
+            $(".c-modalmust, .c-modalmust4, .c-modalmust3").html("")
+            $(".c-myFruit").append(` 
+                <div class="c-dailogcolor"></div> 
+            `) 
+            $(".c-dailog1").show()  
+            $(".c-dailog1").animate({top:"50%"})
+            $(".c-shuttit").click(function() {
+                $(".c-dailog1").css("display","none");
+                $(".c-dailogcolor").removeClass("c-dailogcolor")
+            }) 
+//收货人姓名
+            $("#c-modalname").blur(function() {
+                if( $("#c-modalname").val().length>20) {
+                    $("#c-modalname").addClass("c-modalmust4")
+                    $(".c-modalmust").eq(0).html("最大长度不能超过20")  
+                }else if( $("#c-modalname").val()=="") {
+                    $("#c-modalname").addClass("c-modalmust4")
+                    $(".c-modalmust").eq(0).html("*收货人姓名必填")  
+                } else {
+                    $(".c-modalmust").eq(0).html("") 
+                    $("#c-modalname").removeClass("c-modalmust4")
+                } 
+            })
+// 手机号码
+            $("#c-modalphone").blur(function() {
+                var test = $("#c-modalphone").val()
+                var patt = /^[1][0-9]{10}$/
+                if(!patt.test(test)) {
+                    if(test=="") {
+                        $("#c-modalphone").addClass("c-modalmust4")
+                        $(".c-modalmust").eq(1).html("*手机号码必填")
+                    }else {
+                        $("#c-modalphone").addClass("c-modalmust4")
+                        $(".c-modalmust").eq(1).html("手机格式错误")
+                    } 
+                } else {
+                    $(".c-modalmust").eq(1).html("") 
+                    $("#c-modalphone").removeClass("c-modalmust4")
+                }
+            })
+// 收货地址
+            var provinces = new Array("上海","上海(郊区)","北京","北京(郊区)","天津","浙江","江苏","河北","广东","甘肃","贵州","河南","广西","湖北","海南","湖南","黑龙江","江西","吉林","福建","辽宁","宁夏","内蒙古","青海","四川","陕西","山东","山西","安徽","新疆","西藏","云南","重庆");
+
+            var citys = [["黄浦区","南汇区","嘉定区","虹口区","松江区","卢湾区","杨浦区","静安区","徐汇区","青浦区","闸北区","金山区","奉贤区","闵行区","长宁区","宝山区","浦东新区","普陀区"],
+            ["崇明县"],
+            ["宣武区","海淀区", "石景山区", "门头沟区", "通州区", "西城区", "丰台区", "顺义区", "崇文区", "昌平区", "朝阳区", "东城区", "房山区", "大兴区"],
+            ["延庆县"," 怀柔区", "密云区", "平谷区"],
+            ["河东区","静海县","北辰区","津南区","河西区","大港区","宁河县","红桥区","西青区","东丽区","武清区","南开区","宝坻区","滨海新区","蓟县","和平区","河北区"],
+            ["绍兴市","丽水市","海宁市","嘉兴市","嵊州市","诸暨市","奉化市","金华市","义乌市","台州市","舟山市","上虞市","衢州市","温州市","余姚市","桐乡市","慈溪市","湖州市","杭州市","宁波市"],
+            ["盐城市","徐州市","仪征市","常熟市","张家港市","江阴市","南通市","镇江市","泰州市","句容市","常州市","宿迁市","扬州市","连云港市","太仓市","吴江市","淮安市","宜兴市","丹阳市","南京市","苏州市","昆山市","无锡市"],
+            ["承德市","保定市","衡水市","秦皇岛市","张家口市","邯郸市","沧州市","燕郊","邢台市","唐山市","廊坊市","石家庄市"],
+            ["惠州市","佛山市","梅州市","珠海市","湛江市","中山市","茂名市","广州市","肇州市","潮州市","汕尾市","河源市","清远市","东莞市","阳江市","深圳市","揭阳市","韶关市","云浮市","江门市"],
+            ["酒泉市","金昌市","武威市","临夏","陇南市","张掖市","甘南","平凉市","天水市","嘉峪关市","兰州市","白银市","庆阳市","定西市"],
+            ["黔东南","黔南布依族苗族自治州","贵阳市","毕节","铜仁","黔南","六盘水市","遵义市","安顺市","黔东南苗族侗族自治州","黔西南","黔西南布依族苗族自治州"],
+            ["漯河市","郑州市","商丘市","洛阳市","新乡市","平顶山市","信阳市","许昌市","南阳市","周口市","鹤壁市","驻马店市","三门峡市","开封市","濮阳市","焦作市","安阳市"],
+            ["防城港市","桂林市","柳州市","玉林市","贵港市","北海市","钦州市","百色市","河池市","来宾市","贺州市","梧州市","崇左市","南宁市"],
+            ["随州市","松滋市","鄂州市","神农架林区","孝感市","仙桃市","省直辖","潜江市","荆州市","武汉市","天门市","恩施土家族苗族自治州","黄石市","宜昌市","襄阳市","黄冈市","十堰市","荆门市","咸宁市"],
+            ["省直辖","三亚市","海口市","琼海市"],
+            ["永州市","岳阳市","湘西土家族苗族自治州","衡阳市","湘潭市","怀化市","张家界市","长沙市","常德市","株洲市","娄底市","郴州市","益阳市"],
+            ["大庆市","绥化市","牡丹江市","双鸭山市","黑海市","齐齐哈尔市","大兴安岭","伊春市","七台河市","哈尔滨市","鸡西市","佳木斯市","鹤岗市"],
+            ["九江市","新余市","上饶市","南昌市","鹰潭市","赣州市","抚州市","吉安市","景德镇市","宜春市","萍乡市"],
+            ["白城市","通化市","吉林市","辽源市","松原市","延边朝族自治州","白山市","四平市","长春市"],
+            ["三明市","漳州市","泉州市","南平市","厦门市","宁德市","福州市","莆田市","龙岩市"],
+            ["沈阳市","阜新市","盘锦市","朝阳市","铁岭市","辽阳市","本溪市","葫芦岛市","鞍山市","营口市","抚顺市","丹东市","锦州市","大连市"],
+            ["石嘴山市","中卫市","银川市","吴忠市","固原市"],
+            ["乌兰察布","兴安","呼和浩特市","阿拉善","乌海市","赤峰市","通辽市","呼伦贝尔","巴彦淖尔","锡林郭勒","包头市","鄂尔多斯"],
+            ["海南","海北","西宁市","海东","海西","黄南","玉树","果洛"],
+            ["眉山市","内江市","凉山彝族自治州","达州市","资阳市","宜宾市","南充市","广安市","绵阳市","广元市","泸州市","攀枝花市","阿坝藏族羌族自治州","甘孜藏族自治州","成都市","乐山市","遂宁市","德阳市","雅安市","自贡市","巴中市",],
+            ["安康市","榆林市","铜川市","汉中市","杨凌市","延安市","咸阳市","宝鸡市","商洛市","渭南市","西安市"],
+            ["威海市","德州市","济宁市","淄博市","济南市","莱芜市","菏泽市","滨州市","日照市","青岛市","枣庄市","东营市","烟台市","聊城市","潍坊市","泰安市","临沂市"],
+            ["临汾市","朔州市","太原市","晋城市","长治市","晋中市","大同市","吕梁市","阳泉市","运城市","忻州市"],
+            ["宿州市","滁州市","合肥市","芜湖市","黄山市","阜阳市","安庆市","巢湖市","亳州市","蚌埠市","马鞍山市","淮南市","淮北市","六安市","铜陵市","池州市","宣城市"],
+            ["喀什地区","阿克苏地区","直辖行政单位","阿拉尔市","省直辖","哈密地区","克孜勒苏柯尔克孜自治州","吐鲁番地区","昌吉回族自治州","五家渠市","石河子市","克拉玛依市","乌鲁木齐市","阿勒泰地区","图木舒克市","巴音郭楞蒙古自治州","伊犁哈萨克自治州","塔城地区","和田地区"],
+            ["拉萨市","山南地区","昌都地区","阿里地区","那曲地区","日喀则地区","林芝地区"],
+            ["楚雄彝族自治州","西双版纳傣族自治州","玉溪市","思茅市","普洱市","临沧市","保山市","德宏傣族景颇族自治州","大理白族自治州","红河哈尼族彝族自治州","昆明市","曲靖市","迪庆藏族自治州","昭通市","丽江市","怒江傈僳族自治州","文山壮族苗族自治州"],
+            ["永川区","江津区","大渡口区","南川区","武隆区","纂江区","双桥区","渝北区","南岸区","城口县","大足区","丰都县","巫山区","巫溪县","铜梁区","万盛区","奉节县","垫江县","万州区","北碚区","梁平县","石柱","云阳县","渝中区","合川区","忠县","沙坪坝区","荣昌区","江北区","酉阳","九龙坡区","秀山","开县","璧山区","长寿区","黔江区","彭水","巴南区","潼南区","涪陵区"]]
+
+            var areas = [[["黄浦区"],["南汇区"],["嘉定区"],["虹口区"],["松江区"],["卢湾区"],["杨浦区"],["静安区"],["徐汇区"],["青浦区"],["闸北区"],["金山区"],["奉贤区"],["闵行区"],["长宁区"],["宝山区"],["浦东新区"],["普陀区"]],
+            [["崇明县"]],
+            [["宣武区"],["海淀区"], ["石景山区"],[ "门头沟区"], ["通州区"], ["西城区"], ["丰台区"], ["顺义区"], ["崇文区"],[ "昌平区"], ["朝阳区"], ["东城区"], ["房山区"], ["大兴区"]],
+            [["延庆县"],[" 怀柔区"], ["密云区"], ["平谷区"]],
+            [["河东区"],["静海县"],["北辰区"],["津南区"],["河西区"],["大港区"],["宁河县"],["红桥区"],["西青区"],["东丽区"],["武清区"],["南开区"],["宝坻区"],["滨海新区"],["蓟县"],["和平区"],["河北区"]],
+            [["嵊州市","新昌县","上虞区","上虞市","越城区","柯桥区","诸暨市","绍兴县"],["遂昌县","青田县","云和县","松阳县","龙泉市","景宁县","莲都区","景宁畲族自治县","庆元县","缙云县"],["海宁市"],["南湖区","嘉善县","平湖市","海宁市","嘉善市","秀城区","桐乡市","海盐县","秀洲市"],["嵊州市"],["诸暨市"],["奉化市"],["金东区","浦江县","武义县","义乌市","婺城区","东阳市","永康市","兰溪市","磐安县"],["义乌市"],["路桥区","仙居县","玉环县","椒江区","天台县","黄岩区","温岭市","三门县","临海市"],["岱山县","普陀区","嵊泗县","定海区"],["上虞市"],["开化县","龙游县","柯城区","江山市","常山县","衢江区"],["永嘉县","瑞安市","瓯海区","乐清市","龙湾区","鹿城区","洞头县","苍南县","平阳县","洞头县","泰顺县"],["余姚市"],["桐乡市"],["慈溪市"],["长兴县","德清县","吴兴区","南浔区","安吉县"],["临安市","桐庐县","建德市","富阳区","富阳市","淳安县","高新区","西湖区","滨江区","余杭区","上城区","江干区","萧山区","下城区","拱墅区"],["余姚市","高新区","慈溪市","象山县","奉化区","北仑区","宁海县","奉化市","杭州湾新区","江东区","鄞州区","海曙区","江北区","镇海区"]],
+            [["阜宁县","大丰市","建湖县","射阳县","亭湖区","响水县","滨海县","大丰区","盐都区","东台市"],["睢宁县","高新区","铜山县","云龙区","鼓楼区","泉山区","邳州区","沛县","贾汪区","铜山区","丰县","新沂市","九里区","软件园"],["仪征市"],["常熟市"],["张家港市"],["江阴市"],["海门市","通州市","海安县","如东县","通州市","崇川区","启东市","经济技术开发区","港闸区","如皋市"],["扬中市","润州区","丹徒区","句容市","镇江新区","京口区","丹阳市","丹徒新区"],["高港区","兴化市","靖江市","姜堰区","泰兴市","海陵区"],["句容市"],["溧阳区","新北区","钟楼区","金坛区","武进区","戚墅堰区","金坛市","高新区","天宁区"],["沭阳县","宿城区","泗阳县","高新区","宿豫区","泗洪县"],["广陵区","刊江区","经济开放区","维扬区","江都区","宝应县","仪征市","高邮市"],["东海县","徐圩新区","赣榆区","连云区","连云新城","海州区","新海新区","新浦区","灌南区","赣榆县","灌云县"],["太仓市"],["吴江市"],["洪泽县","淮阴区","涟水县","楚州区","清河区","金湖县","淮安区","清江浦区","盱眙县","洪泽区","青浦区"],["宜兴市"],["丹阳市"],["高新区","高淳区","江北新区","栖霞区","浦口区","雨花台区","六合区","溧水区","江宁区","高淳县","玄武区","下关区","鼓楼区","秦淮区","白下区","建邺区"],["吴江市","张家港市","苏州新区","太仓市","吴江区","平江区","相城区","虎丘区","姑苏区","沧浪区","金阊区","吴中区","工业园区"],["昆山市"],["新吴区","宜兴市","江阴市","梁溪区","滨湖区","崇安区","锡山区","北塘区","惠山区","新区","南长区"]],
+            [["宽城满族自治县","围场满族蒙古族自治区","隆化县","承德县","滦平县","兴隆县","平泉县","鹰手营子矿区","丰宁满族自治县","双滦区","双桥区"],["博野县","高开区","安新县","高碑店市","涞源县","徐水县","易县","顺平县","涞水县","满城区","高阳县","雄县","唐县","徐水区","望都县","定州市","满城县","清苑区","高新区","莲池区","北市区","容城县","定兴县","阜平县","竞秀区","南市区","新市区","涿州市","清苑县","曲阳县","蠡县","安国市","雄安新区"],["饶阳县","武强县","阜城县","安平县","故城县","桃城区","冀州区","武邑县","景县","枣强县","深州市"],["卢龙县","青龙满族自治县","抚宁县","抚宁区","海港区","昌黎县","北戴河新区","北戴河区","山海关区"],["宣化县","尚义县","万全区","怀安县","怀来县"],["涉县","曲周县","鸡泽县"],["河间县","青县","海兴县","盐山县"],["燕郊"],["南宫市","沙河市","邢台县","南和县"],["路南县","玉田县"],["固安县","经济开发区"],["无极县","正定县"]],
+            [["惠东县","龙门县"],["顺德区","南海区"],["五华县","丰顺区"],["香洲区","斗门区"],["吴川区","雷州区"],["龙湖区","金平区"],["东凤镇","东升镇"],["电白区","化州市"],["天河区","东山区"],["广宁县","四会市"],["湘桥县","潮安县"],["城区","陆河县"],["紫金县","龙川县"],["清城区","清新区"],["常平镇","谢岗镇"],["阳东县","阳春市"],["南山区","罗湖区"],["揭东县","揭西县"],["仁化县","曲江区"]],
+            [["玉门市","瓜州县"],["永昌县","金川区"],["凉州区","古浪县"],["康乐县","临夏县"],["康县","文县"],["甘州区","民乐县"],["夏河县","合作市"],["灵台县","华亭县"],["秦安县","秦城区"],["五一区","胜利区"],["城关区","红古区"],["平川区","白银区"],["正宁县","镇原县"],["安定区","陇西区"]],
+            [["黄平县"],["独山县","惠水县"],["小河区","花溪区"],["大方县","织金县"],["思南县","万山区"],["麻江县"],["钟山区","盘县"],["余庆县","仁怀市"],["平坝县","平坝区"],["黄平县","雷山县"],["台江县"],["安龙县","兴仁县"]],
+            [["源汇区","舞阳县"],["二七区","荥阳市"],["民权县","夏邑县"],["吉利区","西工区"],["卫滨区","辉县市"],["宝丰县","石龙区"],["息县","淮滨县"],["襄城县","许昌县"],["西峡县","桐柏县"],["东新区","西华县"],["鹤山区","山城区"],["西平县","上蔡县"],["卢氏县","灵宝市"],["龙亭区","尉氏县"],["南乐县","华龙区"],["武陟县","济源市"],["林州市","安阳县"]],
+            [["港口区"],["临桂区"],["城中区"],["玉东新区"],["桂平市"],["银海区"],["灵山县"],["乐业县"],["凤山县"],["象州县"],["昭平县"],["蝶山区"],["大新县"],["兴宁区"]],
+            [["广水市"],["松滋市"],["梁子湖区"],["神农架林区"],["大悟县"],["仙桃市"],["省直辖"],["潜江市"],["洪湖市"],["东西湖区"],["天门市"],["鹤峰县"],["经济开发区"],["点军区"],["谷城县"],["蕲春县"],["竹山县"],["掇刀区"],["崇阳县"]],
+            [["省直辖"],["乐东黎族自治县"],["美兰区"],["琼海市"]],
+            [["道县"],["平江县"],["永顺县"],["衡阳县"],["邵东县"],["岳塘区"],["会同县"],["桑植县"],["宁乡县"],["汉寿县"],["炎陵县"],["双峰县"],["永兴县"],["安化县"]],
+            [["肇州县"],["明水县"],["东安区"],["尖山区"],["北安市"],["拜泉县"],["塔河县"],["友好区"],["桃山区"],["南岗区"],["鸡东县"],["桦川县"],["兴安区"]],
+            [["瑞昌市"],["分宜县"],["横峰县"],["红谷滩新区"],["高新区"],["瑞金市"],["南城县"],["新干县"],["浮梁县"],["靖安县"],["芦溪县"]],
+            [["镇赉县"],["东昌区"],["丰满区"],["西安区"],["乾安县"],["延吉市"],["浑江区"],["双辽市"],["九台市"]],
+            [["沙县"],["龙海市"],["鲤城区"],["顺昌县"],["同安区"],["寿宁县"],["晋安区"],["涵江区"],["武平县"]],
+            [["康平县"],["新邱区"],["大洼区"],["朝阳县"],["银州区"],["白塔区"],["南芬区"],["绥中县"],["立山区"],["大石桥市"],["西市区"],["抚顺县"],["东港市"],["太和区"],["金普新区"]],
+            [["惠农区"],["海原县"],["永宁县"],["盐池县"],["隆德县"]],
+            [["化德县"],["突泉县"],["赛罕区"],["阿拉善右旗"],["元宝山区"],["奈曼旗"],["牙克石市"],["磴口县"],["多伦县"],["九原区"],["鄂托克旗"]],
+            [["共和县"],["祁连县"],["城中区"],["乐都区"],["乌兰县"],["尖扎县"],["杂多县"],["久治县"]],
+            [["丹棱县"],["市中区"],["会理县"],["达川区"],["安岳县"],["屏山县"],["西充县"],["广安区"],["高新区"],["旺苍县"],["江阳区"],["米易县"],["九寨沟县"],["康定县"],["郫县"],["犍为县"],["经济开发区"],["罗江县"],["名山县"],["沿滩区"],["南江县"]],
+            [["旬阳县"],["府谷县"],["印台区"],["宁强县"],["杨凌市"],["志丹县"],["高新区"],["太白县"],["商州区"],["大荔县"],["碑林区"]],
+            [["荣成市"],["夏津县"],["汶上县"],["高新区"],["章丘区"],["莱城区"],["鄄城县"],["无棣县"],["五莲县"],["黄岛区"],["高新区"],["广饶县"],["长岛县"],["东昌府区"],["高密市"],["泰山区"],["沂水县"]],
+            [["曲沃县"],["右玉县"],["娄烦县"],["高平市"],["长子县"],["榆次区"],["灵丘县"],["石楼县"],["平定县"],["闻喜县"],["忻府区"]],
+            [["经济开发区"],["全椒县"],["蜀山区"],["南陵县"],["黄山区"],["颍东区"],["岳西县"],["庐江县"],["利辛县"],["淮上区"],["含山县"],["田家庵区"],["烈山区"],["舒城县"],["义安区"],["石台县"],["旌德县"]],
+            [["叶城县"],["阿瓦提县"],["直辖行政单位"],["阿拉尔市"],["省直辖"],["哈密市"],["阿合奇县"],["托克逊县"],["呼图壁县"],["精河县"],["五家渠市"],["石河子市"],["白碱滩区"],["东山区"],["布尔津县"],["图木舒克市"],["和静县"],["伊宁县"],["乌苏市"],["洛浦县"]],
+            [["墨竹工卡县"],["琼结县"],["江达县"],["改则县"],["聂荣县"],["萨迦县"],["米林县"]],
+            [["姚安县"],["楚雄彝族自治州"],["华宁县"],["翠云区"],["思茅区"],["临翔区"],["昌宁县"],["梁河县"],["永平县"],["红河县"],["呈贡区"],["会泽县"],["德钦县"],["永善县"],["古城区"],["福贡县"],["砚山县"]],
+            [["永川区"],["江津区"],["大渡口区"],["南川区"],["武隆区"],["纂江区"],["双桥区"],["渝北区"],["南岸区"],["城口县"],["大足区"],["丰都县"],["巫山区"],["巫溪县"],["铜梁区"],["万盛区"],["奉节县"],["垫江县"],["万州区"],["北碚区"],["梁平县"],["石柱"],["云阳县"],["渝中区"],["合川区"],["忠县"],["沙坪坝区"],["荣昌区"],["江北区"],["酉阳"],["九龙坡区"],["秀山"],["开县"],["璧山区"],["长寿区"],["黔江区"],["彭水"],["巴南区"],["潼南区"],["涪陵区"]]]
+            for(var i=0;i<provinces.length;i++){
+                $("#c-modalprivnce").append("<option value='"+provinces[i]+"'>"+provinces[i]+"</option>")
+            }
+            $("#c-modalprivnce").change(function(){
+                $("#c-modalcity").html("<option value='选择城市'>选择城市</option>")
+                $("#c-modalarea").html("<option value='选择区域'>选择区域</option>") 
+                //填充市列表
+                for(var i=0;i<citys[$("#c-modalprivnce option:selected").index()-1].length;i++){
+                    $("#c-modalcity").append("<option value='"+citys[$("#c-modalprivnce option:selected").index()-1][i]+"'>"+citys[$("#c-modalprivnce option:selected").index()-1][i]+"</option>")
+                }   
+            })
+            $("#c-modalcity").change(function(){
+                $("#c-modalarea").html("<option value='选择区域'>选择区域</option>") 
+                for(var i=0;i<areas[$("#c-modalprivnce option:selected").index()-1][$("#c-modalcity option:selected").index()-1].length;i++){
+                    $("#c-modalarea").append("<option value='"+areas[$("#c-modalprivnce option:selected").index()-1][$("#c-modalcity option:selected").index()-1][i]+"'>"+areas[$("#c-modalprivnce option:selected").index()-1][$("#c-modalcity option:selected").index()-1][i]+"</option>")
+                }
+            }) 
+            $("#c-modalarea").change(function() {
+                if($("#c-modalarea").val()=="选择区域") {
+                $("#c-modalarea").addClass("c-modalmust4")
+                $(".c-modalmust").eq(2).html("*必选") 
+                } else {
+                    $("#c-modalarea").removeClass("c-modalmust4")
+                    $(".c-modalmust").eq(2).html("") 
+                }
+            }) 
+// 详细地址  
+            $("#c-modaldetail").blur(function() {
+                    if($("#c-modaldetail").val()!="") {
+                        $(".c-modalmust").eq(3).html("") 
+                    }else(
+                        $(".c-modalmust").eq(3).html("*详细地址为必填") 
+                    )
+                }) 
+// 邮政编码
+            $("#c-modalemail").blur(function() {
+                var test = $("#c-modalemail").val()
+                var patt = /^[0-9]{0,}$/
+                if(!patt.test(test)) {
+                    $("#c-modalemail").addClass("c-modalmust4")
+                    $(".c-modalmust2").html("格式错误")
+                    $(".c-modalmust2").addClass("c-modalmust4")
+                }else {
+                    $(".c-modalmust2").html("")
+                    $("#c-modalemail").removeClass("c-modalmust4")
+                }
+            }) 
+// 点击保存 
+    $(".c-modalcontrols a").click(function() {
+        $(".c-modalcontrols a").siblings().removeClass("c-selected")
+        $(this).addClass("c-selected")
+    })
+    $(".c-modalcontrols button ").off('click').on('click',function() { 
+        if($(".c-modalcontrols #c-modalname").val()=="") { 
+            $(".c-modalmust").eq(0).html("*收货人姓名必填") 
+        }
+        if($(".c-modalcontrols #c-modalphone").val()=="") { 
+            $(".c-modalmust").eq(1).html("*手机号码必填") 
+        }
+        if($(".c-modalcontrols #c-modaldetail").val()=="") { 
+            $(".c-modalmust").eq(3).html("*详细地址为必填") 
+        }
+        if($("#c-modalarea").val("选择区域")) { 
+            $("#c-modalarea").addClass("c-modalmust1")
+            $(".c-modalmust").eq(2).html("必选")  
+        }
+        if($(".c-modalcontrols a").hasClass("c-selected")==false) { 
+            $(".c-modalcontrols .c-modalmust3").html("必填") 
+        }
+        if($(".c-modalmust").html()==""&&$(".c-modalcontrols a").hasClass("c-selected")){
+            $(".c-dailog1").css("display","none");
+            $(".c-dailogcolor").removeClass("c-dailogcolor")  
+            if($(".c-addresslist").length==0) { 
+                $(".h-newAddress ").append(` 
+                    <div class="h-addresslist"> 
+                        <ul>
+                            <li>
+                            <lable>
+                                <input type="radio" checked>
+                                <button type="button" class="h-comp">
+                                    ${$(".c-modalcontrols a").html()}
+                                    
+                                </button>
+                                <span class="h-name">${$("#c-modalname").val()}</span>
+                                <span class="h-site">
+                                    ${$("#c-modalprivnce").val() }
+                                    ${$("#c-modalcity").val() }
+                                   
+                                    ${$("#c-modaldetail").val()},
+                                    ${$("#c-modalphone").val()}
+                                </span>
+                            </lable>  
+                            </li>
+                        </ul>
+                    </div>
+                `)
+            } 
+            localStorage.setItem("h-h",$(".h-name").html())
+            localStorage.setItem("h-k",$(".h-site").html())
+            var a = $(".c-addresslist").length 
+            $(".c-addressnum").eq(0).html(a) 
+            $(".c-address").on("click", ".c-name .c-del", function(){
+                $(".c-myFruit").append(` 
+                    <div class="c-dailogcolor"></div>
+                    <div class="c-dailog">
+                        <div class="c-dailogtit">
+                            <i></i>
+                            提示
+                        </div>
+                        <div class="c-dailogcon"> 
+                            <p>您确定要删除？</p>
+                            <div class="c-btnbox">
+                                <a class="c-boxOK">确定</a>
+                                <a class="c-boxcancel">取消</a>
+                            </div>
+                        </div>
+                    </div> 
+                `) 
+                var ok=$(this);
+                $(".c-btnbox .c-boxOK").click(function() {
+                    ok.parent().parent().parent().parent().parent().remove()
+                    $(".c-dailog").css("display","none");
+                    $(".c-dailogcolor").removeClass("c-dailogcolor");  
+                    var a = $(".c-addresslist").length   
+                    var b = $(".c-addressnum").eq(0).html()
+                    $(".c-addressnum").eq(0).html(b-1) 
+                    if(b==1) {
+                        $(".c-addresslist").remove();
+                        $(".c-currencyPage").remove();
+                        $(".c-addressnum").eq(0).html("0")
+                    } 
+                })  
+                $(".c-btnbox .c-boxcancel").click(function() {
+                    $(".c-dailog").css("display","none");
+                    $(".c-dailogcolor").removeClass("c-dailogcolor")
+                })      
+            })  
+            $(".c-modalbtns .c-modaldefault").click(function() {
+                $(".c-myFruit").append(` 
+                    <div class="c-dailogcolor"></div>
+                    <div class="c-dailog">
+                        <div class="c-dailogtit">
+                            <i></i>
+                            提示
+                        </div>
+                        <div class="c-dailogcon"> 
+                            <p>确定设为默认地址？</p>
+                            <div class="c-btnbox">
+                                <a class="c-boxOK">确定</a>
+                                <a class="c-boxcancel">取消</a>
+                            </div>
+                        </div>
+                    </div> 
+                `) 
+                $(".c-btnbox .c-boxOK").click(function() {
+                    $(".c-dailog").css("display","none");
+                    $(".c-dailogcolor").removeClass("c-dailogcolor")
+                    $(".c-name").append(`
+                        <span class="c-defaultadd">默认地址</span>
+                    `)
+                    $(".c-modalbtns .c-modaldefault").html("")
+                    $(".c-btnbox .c-boxOK").css("display","none")
+                })
+                $(".c-btnbox .c-boxcancel").click(function() {
+                    $(".c-dailog").css("display","none");
+                    $(".c-dailogcolor").removeClass("c-dailogcolor")
+                })
+            })
+            $(".c-modalbtns .c-modaledit").click(function() {
+                $(".c-myFruit").append(` 
+                    <div class="c-dailogcolor"></div> 
+                `) 
+                $(".c-dailog1").show()  
+                $(".c-dailog1").animate({top:"50%"})
+                $(".c-shuttit").click(function() {
+                    $(".c-dailog1").css("display","none");
+                    $(".c-dailogcolor").removeClass("c-dailogcolor")
+                }) 
+            })
+        }
+    })
+            
+    })
+  
+//发票信息
+        $(".h-hint").mouseover(function(){
+            $(".h-dorpdown").css("display","block");
+        })
+        $(".h-hint").mouseout(function(){
+            $(".h-dorpdown").css("display","none");
+        })
+        $(".h-invoice input").click(function(){
+            if($(this).prop("checked")==true){
+                $(".h-invoice-item").css("display","block");
+            } else {
+                $(".h-invoice-item").css("display","");
+            }
+        })
+        $(".h-question").mouseover(function(){
+            $(".h-dorpdown1").css("display","block");
+        })
+        $(".h-question").mouseout(function(){
+            $(".h-dorpdown1").css("display","none");
+        })
+        $(".h-add-infor").click(function(){
+            $(".h-invoice-infor").slideToggle("slow");
+        })
+        $("#comp").click(function(){
+            $("#self").removeAttr("checked");
+            $(".h-company").css("display","block");
+            $(".h-gray3").css("display","block");
+        })
+        $("#self").click(function(){
+            $("#comp").removeAttr("checked");
+            $(".h-company").css("display","none");
+            $(".h-gray3").css("display","none");
+        })
+//商品信息
+     $(".h-append").after(
+            `
+            <tr>
+                <td>
+                    <a  href="###">${localStorage.getItem("a")}</a>
+                    <p class="gray2">不支持7天无理由退货</p>             
+                </td>
+                <td>￥${localStorage.getItem("b")}</td>
+                <td>${localStorage.getItem("c")}</td>
+                <td>${localStorage.getItem("d")}</td>
+                <td>￥${localStorage.getItem("e")}</td>
+            </tr>`
+        )
+       
+        
+//优惠券信息
+        $(".item-tit").click(function(){
+            $(".h-item-wrap").slideToggle("slow");
+        })
+        $(".sub-tit2").click(function(){
+            $(".h-sub-warp2").slideToggle("slow");
+        })
+        $(".item-tit1").click(function(){
+            $(".h-item-wrap1").slideToggle("slow");
+        })
+        $(".h-je").append(`${localStorage.getItem("f")}`)
+        $(".h-em").append(`${localStorage.getItem("f")}`)
+//底部
+        $(window).scroll(function() {
+            var scrollTop=$("html").scrollTop();
+            if(scrollTop<=560){
+                $(".h-order-foot").addClass("h-settle-fixed");
+                $(".h-none").show();
+            }else{
+                $(".h-none").hide();
+                $(".h-order-foot").removeClass("h-settle-fixed");
+
+            }
+        })
+    })
+    </script>
+</body>
+</html>

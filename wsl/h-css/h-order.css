@@ -1,0 +1,581 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #444;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.h-order {
+    width: 100%;
+    background: #f7f8f9;
+}
+.h-header {
+    width: 100%;
+    height: 78px;
+    background: #e0e0e0;
+}
+.h-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+}
+.h-header .h-wrap {
+    height: 78px;
+    padding: 15px 0 5px;
+}
+.h-logo {
+    float: left;
+}
+.h-logo a {
+    display: block;
+    width: 145px;
+    height: 50px;
+    background: url(http://static01.yiguo.com/cart/images/header/logo.png) no-repeat center;
+}
+.h-steps {
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+.h-steps ul {
+    list-style: none;
+}
+.h-steps li {
+    position: relative;
+    float: left;
+}
+.h-steps li b {
+    background: url(http://static01.yiguo.com/cart/images/order-step.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+.h-steps li .h-b1 {
+    background-position: 0 -44px;
+}
+.h-steps li .h-b2 {
+    background-position: -42px -44px;
+}
+.h-steps li .h-b3 {
+    background-position: -84px 0;
+}
+.h-steps li span {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333;
+}
+.h-steps .h-on span {
+    color: #008842;
+}
+.h-steps li i {
+    width: 165px;
+    height: 6px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+.h-i1 {
+    background: #008842;
+}
+.h-i2 {
+    background: #fff;
+}
+.h-wrap h2 {
+    font-size: 12px;
+    height: 38px;
+    line-height: 38px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-color: #fff;
+    background-position: 0 -120px;
+    border-bottom: 2px solid #7bb798;
+    /* text-indent: -9999em; */
+    position: relative;
+}
+.h-order-alert {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    padding-left: 36px;
+}
+.h-share {
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding-bottom: 40px;
+    border-left: 1px solid #7bb798;
+}
+h3 {
+    width: 100%;
+    position: absolute;
+    font: bold 16px/1 microsoft yahei;
+    color: #008842;
+    left: -16px;
+    top: -16px;
+}
+h3 i {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;   
+}
+.h-information h3 i {
+    background-position: 3px -40px;
+}
+.h-newAddress {
+    display: block;
+    color: #008842;
+    font-weight: bold;
+    line-height: 2em;
+    cursor: pointer;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.h-newAddress i {
+    margin-left: 30px;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-position: -100px -180px;
+}
+.h-shippingInformation h3 i {
+    background-position: -37px -40px;
+}
+.h-delivery {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.h-i-payment h3 i {
+    background-position: -77px -40px;
+}
+.h-payment {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.h-i-invoice h3 i {
+    background-position: -117px -40px;
+}
+.h-invoice {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.h-invoice input {
+    margin-right: 5px;
+    cursor:pointer;
+    outline: none;
+}
+.h-promptbox {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+.h-promptbox span {
+    color: #7bb798;
+}
+.h-dorpdown {
+    display: none;
+    top: 24px;
+    left: -36px;
+    width: 400px;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    line-height: 20px;
+    color: #666;
+    background: #fdfffe;
+    border: 1px solid #c6ddd1;
+}
+.center {
+    text-align: center;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.h-invoice-item {
+    display: none;
+    margin: 10px 0 0 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.h-invoiceType {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.h-invoiceType span {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #f2fcf7;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #7bb798;
+    cursor: pointer;
+}
+.h-question {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-position: -240px -160px;
+    margin-left: 10px;
+}
+.h-dorpdown1 {
+    display: none;
+    top: 24px;
+    left: -36px;
+    width: 400px;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    line-height: 20px;
+    color: #666;
+    background: #fdfffe;
+    border: 1px solid #c6ddd1;
+}
+.h-add-infor {
+    display: block;
+    color: #008842;
+    font-weight: bold;
+    line-height: 2em;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.h-add-infor i {
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-position: -100px -180px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.h-invoice-infor {
+    display: none;
+    margin-left: 30px;
+    line-height: 20px;
+}
+.h-invoice-infor label {
+    margin-right: 20px;
+    padding: 0;
+    border: 0;
+    background: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.h-invoice-infor label input {
+    margin-right: 5px;
+    outline: none;
+}
+.h-company {
+    display: none;
+}
+.h-company input {
+    display:block;
+    width: 280px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.h-gray3 {
+    display: none;
+    color: #808080;
+}
+.red {
+    color: #e8380d;
+}
+.h-save span {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 6px 14px;
+    line-height: 3em;
+    border-radius: 4px;
+}
+.h-save .save {
+    color: #fff;
+    border: 1px solid #008842;
+    background-color: #008842;
+}
+.h-save .cancle {
+    color: #262626;
+    border: 1px solid #ddd;
+    background-color: #f5f4f4;
+}
+.h-tip {
+    margin-top: 10px;
+    padding-top: 10px;
+    line-height: 20px;
+    border-top: 1px solid #eaeaea;
+}
+.h-commodity h3 i {
+    background-position: -157px -40px;
+}
+.h-backcart {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #008842;
+    font: normal 12px "\5b8b\4f53";
+}
+
+.h-table {
+    border-collapse: collapse;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    background-color: #fff;
+    border-spacing: 0;
+}
+.h-table th {
+    color: #666;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px;
+    text-align: center;
+}
+.h-table td {
+    text-align: center;
+    color: #333;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px;
+}
+.h-table td:first-child {   
+    padding-left: 60px;
+    line-height: 20px;
+    text-align: left;
+}
+a {
+    color: #444;
+    text-decoration: none;
+    outline: none; 
+    cursor: pointer;
+}
+.gray2 {
+    color: #808080;
+}
+.h-fl {
+    float: left;
+    padding: 10px 0;
+}
+.h-fl input {
+    width: 530px;
+    height: 16px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.h-commodityInformation {
+    padding-bottom: 60px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.h-discount h3 i {
+    background-position: -197px -40px;
+}
+.h-voucher {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d5dfd0;
+}
+.item-tit ,.item-tit1 {
+    line-height: 3em;
+}
+.item-tit i ,.item-tit1 i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-position: -60px -180px;
+}
+.h-item-wrap {
+    display: none;
+    position: relative;
+    padding-left: 22px;
+}
+.h-item-wrap1 {
+    position: relative;
+    display: none;
+    padding-left: 22px;
+}
+.h-item-wrap1 input {
+    width: 180px;
+    margin-right: 23px;
+    border: 1px solid #ddd;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    vertical-align: middle;
+    outline: none;
+}
+.h-pass {
+    width: 110px;
+    margin-right: 8px;
+}
+.h-item-wrap1 span {
+    padding: 4px 14px 5px;
+    background: #008842;
+    border: 1px solid #008842;
+    border-radius: 2px;
+    font: bold 12px/3 microsoft yahei;
+    color: #fff;
+    margin-left: 0;
+    cursor: pointer;
+}
+.h-item-wrap1 p {
+    margin-top: 10px;
+    color: #008842;
+}
+.sub-tit {
+    cursor: pointer;
+    line-height: 3em;
+}
+.sub-tit i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: url(http://static01.yiguo.com/cart/images/bg_order.png) no-repeat;
+    background-position: -60px -180px;
+}
+.h-sub-warp {
+    position: relative;
+    padding-left: 22px;
+}
+.h-sub-warp2 {
+    position: relative;
+    padding-left: 22px;
+}
+.h-sub-warp2 input {
+    outline: none;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    width: 180px;
+    margin-right: 23px;
+    border: 1px solid #ddd;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+}
+.h-verification {
+    padding: 4px 14px 5px;
+    background: #008842;
+    border: 1px solid #008842;
+    border-radius: 2px;
+    font: bold 12px/3 microsoft yahei;
+    color: #fff;
+    margin-left: 0;
+    cursor: pointer;
+}
+.h-ver input {
+    width: 110px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    outline: none;
+}
+.h-ver img {
+    vertical-align: middle;
+    border: none;
+}
+.h-ver span {
+    color: #666;
+    cursor: pointer;
+}
+.h-orderer h3 i {
+    background-position: -236px -40px;
+}
+.h-order1 div {
+    margin-bottom: 10px;
+}
+.h-order1 div input {
+    width: 170px;
+    height: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.h-order2 {
+    line-height: 2em;
+    font-size: 14px;
+}
+.h-wrap1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.h-right {
+    text-align: right;
+}
+.h-order-foot {
+    background-color: #f7f7f7;
+    font: 12px/1em microsoft yahei;
+    color: #666;
+    margin-top: 20px; 
+    padding: 10px;
+}
+.h-order-foot span {
+    margin-right: 20px;
+}
+.h-order-foot em {
+    color: #e8380d;
+    font-weight: bold;
+    font: bold 18px/1em microsoft yahei,Verdana;
+}
+.h-none {
+    display: none;
+}
+.h-pay {
+    font-size: 14px;
+} 
+.h-btn {
+    font: bold 18px/1em microsoft yahei;
+    background-color: rgb(255, 83, 23);
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-right: 75px;
+}
+.h-settle-fixed {
+    z-index: 100;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-right: 0;
+}
